@@ -1,6 +1,7 @@
 import authorImgSrc from '../assets/portrait-transparent.png';
 import Header from './Header';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => (
   <>
@@ -40,6 +41,8 @@ const HomePage = () => (
         </p>
         {/* TODO: add screenshot of project */}
       </article>
+      <Link to="/contact">Get in Touch</Link>
+      <Link to="/projects">See all projects</Link>
     </main>
     <Footer />
   </>
