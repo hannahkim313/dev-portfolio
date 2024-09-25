@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -19,6 +20,8 @@ const AllProjectsPage = () => (
         {/* TODO: add screenshot of project */}
       </article>
       {/* TODO: add more projects */}
+      <p>Like what you see? Let's collaborate and bring your ideas to life.</p>
+      <Link to="/contact">Let's Connect</Link>
     </main>
     <Footer />
   </>
