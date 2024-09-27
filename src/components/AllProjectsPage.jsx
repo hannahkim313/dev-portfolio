@@ -95,6 +95,10 @@ const AllProjectsPage = () => (
           alt="Screenshot of the gameplay featuring the player and opponent's game boards with hits and misses."
         />
       </article>
+      <p>
+        Check out all my projects on
+        <a href="https://github.com/hannahkim313">GitHub</a>
+      </p>
       <p>Like what you see? Let's collaborate and bring your ideas to life.</p>
       <Link to="/contact">Let's Connect</Link>
     </main>
