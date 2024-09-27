@@ -3,6 +3,7 @@ import HomePage from './HomePage';
 import ErrorPage from './ErrorPage';
 import AllProjectsPage from './AllProjectsPage';
 import ProjectPage from './ProjectPage';
+import Blog from './Blog';
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const Router = () => {
     {
       path: '/projects/:projectTitle',
       element: <ProjectPage />,
+    },
+    {
+      path: '/blog',
+      element: <Blog />,
     },
   ]);
 
