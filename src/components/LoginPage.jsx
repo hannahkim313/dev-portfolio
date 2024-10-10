@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useFetchAPI from '../hooks/useFetchAPI';
-import { setToken } from '../utils/tokenService';
+import { getToken, setToken } from '../utils/tokenService';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -11,6 +11,8 @@ const LoginPage = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [shouldFetch, setShouldFetch] = useState(false);
+
+  const token = getToken();
   const navigate = useNavigate();
 
   const url = '/blog/auth/login';
@@ -25,10 +27,12 @@ const LoginPage = () => {
 
   useEffect(() => {
     if (data) {
+      setUsername('');
+      setPassword('');
       setLoading(false);
       setError(null);
       setShouldFetch(false);
-      setToken(data.token);
+      setToken(data.data.token);
       navigate('/blog/articles');
     }
   }, [data, navigate]);
@@ -64,41 +68,50 @@ const LoginPage = () => {
     }
 
     setLoading(true);
-    setShouldFetch(true);
     setError(null);
+    setShouldFetch(true);
   };
 
   return (
     <>
       <Header />
       <main>
-        <form action="" method="post" onSubmit={handleSubmit}>
-          <h1>Welcome Back! Please Log In</h1>
-          <label htmlFor="username">Username</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          {error && <p>{error}</p>}
-          <button type="submit" disabled={loading}>
-            Log in
-          </button>
-          <p>
-            Don't have an account yet?{' '}
-            <a href="/blog/auth/register">Sign up here</a>
-          </p>
-        </form>
+        {token ? (
+          <>
+            <h1>You're Already Logged In!</h1>
+            <p>Looks like you're already logged into your account.</p>
+            <Link to="/blog/articles">Return to Blog</Link>
+            <button type="button">Log Out</button>
+          </>
+        ) : (
+          <form action="" method="post" onSubmit={handleSubmit}>
+            <h1>Welcome Back! Please Log In</h1>
+            <label htmlFor="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            {error && <p>{error}</p>}
+            <button type="submit" disabled={loading}>
+              Log in
+            </button>
+            <p>
+              Don't have an account yet?{' '}
+              <a href="/blog/auth/register">Sign up here</a>
+            </p>
+          </form>
+        )}
       </main>
       <Footer />
     </>
