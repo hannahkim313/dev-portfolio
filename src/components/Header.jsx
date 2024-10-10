@@ -3,11 +3,25 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <header>
     <p>Hannah Kim | Creative Front-End Developer</p>
-    <Link to="/">Home</Link>
-    <Link to="/projects">Projects</Link>
-    <Link to="/about">About</Link>
-    <Link to="/blog/articles">Blog</Link>
-    <Link to="/contact">Contact</Link>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/blog/articles">Blog</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </nav>
   </header>
 );
 
