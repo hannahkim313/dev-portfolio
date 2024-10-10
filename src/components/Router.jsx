@@ -4,6 +4,7 @@ import ErrorPage from './ErrorPage';
 import AllProjectsPage from './AllProjectsPage';
 import ProjectPage from './ProjectPage';
 import Blog from './Blog';
+import LoginPage from './LoginPage';
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -21,8 +22,12 @@ const Router = () => {
       element: <ProjectPage />,
     },
     {
-      path: '/blog',
+      path: '/blog/articles',
       element: <Blog />,
+    },
+    {
+      path: '/blog/auth/login',
+      element: <LoginPage />,
     },
   ]);
 
