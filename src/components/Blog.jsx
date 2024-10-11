@@ -31,7 +31,7 @@ const Blog = () => {
   );
 
   useEffect(() => {
-    if (token === 'undefined') {
+    if (!token) {
       return;
     }
 
