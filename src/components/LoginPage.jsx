@@ -60,7 +60,7 @@ const LoginPage = () => {
     }
   }, [fetchError]);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (loading) {
