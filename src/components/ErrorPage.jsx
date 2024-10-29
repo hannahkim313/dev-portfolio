@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import errorImgSrc from '../assets/404.png';
 
+// TODO: refactor to display various errors, not just 404
+
 const ErrorPage = () => (
   <main>
     <section>
