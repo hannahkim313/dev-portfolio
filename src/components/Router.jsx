@@ -4,6 +4,7 @@ import ErrorPage from './ErrorPage';
 import AllProjectsPage from './AllProjectsPage';
 import ProjectPage from './ProjectPage';
 import Blog from './Blog';
+import ArticlePage from './ArticlePage';
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const Router = () => {
     {
       path: '/blog',
       element: <Blog />,
+    },
+    {
+      path: '/blog/articles/:articleTitle',
+      element: <ArticlePage />,
     },
   ]);
 
