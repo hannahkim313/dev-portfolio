@@ -21,7 +21,7 @@ const Router = () => {
       element: <ProjectPage />,
     },
     {
-      path: '/blog/articles',
+      path: '/blog',
       element: <Blog />,
     },
   ]);
