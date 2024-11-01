@@ -49,7 +49,7 @@ const Blog = () => {
         <h2>Articles</h2>
         {loading && <p>Loading articles...</p>}
         {error && <p>{error}</p>}
-        {data && data.data.articles.length === 0 && (
+        {data && data.articles.length === 0 && (
           <>
             <strong>No Articles Yet!</strong>
             <p>
@@ -60,8 +60,8 @@ const Blog = () => {
           </>
         )}
         {data &&
-          data.data.articles.length > 0 &&
-          data.data.articles.map((article) => {
+          data.articles.length > 0 &&
+          data.articles.map((article) => {
             return (
               <Link to={`/blog/articles/${article.url}`} key={article.id}>
                 <article>

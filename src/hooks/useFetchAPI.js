@@ -27,8 +27,8 @@ const useFetchAPI = (url, method = 'GET', body = null, options = {}) => {
         setFetchError(null);
       } catch (err) {
         if (err.code !== 'ERR_CANCELED') {
-          if (err.response?.data?.data?.error) {
-            setFetchError(err.response.data.data.error);
+          if (err.response?.data?.error) {
+            setFetchError(err.response.data.error);
           } else {
             setFetchError(handleError(err));
           }
