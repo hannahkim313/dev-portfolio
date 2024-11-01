@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import authorImgSrc from '../assets/portrait-transparent.png';
 import apiImgSrc from '../assets/api-main.png';
 import urbanThreadImgSrc from '../assets/urban-thread-main.png';
@@ -6,9 +6,12 @@ import battleshipImgSrc from '../assets/battleship-main.png';
 import Header from './Header';
 import Footer from './Footer';
 
-const HomePage = () => (
-  <>
-    <Header />
+const HomePage = () => {
+  const location = useLocation();
+
+  const isHome = location.pathname === '/';
+
+  const mainContent = (
     <main>
       <img src={authorImgSrc} alt="Digital illustration of Hannah" />
       <h1>Hi, I'm Hannah - Creative Front-End Developer</h1>
@@ -59,8 +62,15 @@ const HomePage = () => (
       <Link to="/contact">Get in Touch</Link>
       <Link to="/projects">See all projects</Link>
     </main>
-    <Footer />
-  </>
-);
+  );
+
+  return (
+    <>
+      <Header />
+      {isHome ? mainContent : <Outlet />}
+      <Footer />
+    </>
+  );
+};
 
 export default HomePage;

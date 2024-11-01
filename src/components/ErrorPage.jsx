@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
-import errorImgSrc from '../assets/404.png';
+import errorImgSrc from '../assets/error.png';
 
-// TODO: refactor to display various errors, not just 404
-
-const ErrorPage = () => (
+const ErrorPage = ({ errorMessage }) => (
   <main>
     <section>
-      <h1>404</h1>
-      <img src={errorImgSrc} alt="404: Page not found" />
-      <p>Uh-oh! Looks like you hit a dead end.</p>
+      <h1>Something went wrong!</h1>
+      <img
+        src={errorImgSrc}
+        alt="A digital illustration of a wooden sign that states 'Dead end.'"
+      />
+      <p>{errorMessage}</p>
       <Link to="/">Back to home</Link>
     </section>
   </main>

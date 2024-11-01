@@ -12,22 +12,34 @@ const Router = () => {
       path: '/',
       element: <HomePage />,
       errorElement: <ErrorPage />,
-    },
-    {
-      path: '/projects',
-      element: <AllProjectsPage />,
-    },
-    {
-      path: '/projects/:projectTitle',
-      element: <ProjectPage />,
-    },
-    {
-      path: '/blog',
-      element: <Blog />,
-    },
-    {
-      path: '/blog/articles/:articleTitle',
-      element: <ArticlePage />,
+      children: [
+        {
+          path: 'projects',
+          element: <AllProjectsPage />,
+        },
+        {
+          path: 'projects/:projectTitle',
+          element: <ProjectPage />,
+        },
+        {
+          path: 'blog',
+          element: <Blog />,
+        },
+        {
+          path: 'blog/articles/:articleTitle',
+          element: <ArticlePage />,
+        },
+        {
+          path: '*',
+          element: (
+            <ErrorPage
+              errorMessage={
+                "Oops! Looks like the page you're looking for doesn't exist."
+              }
+            />
+          ),
+        },
+      ],
     },
   ]);
 
