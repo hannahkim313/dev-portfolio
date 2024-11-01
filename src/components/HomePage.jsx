@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import authorImgSrc from '../assets/portrait-transparent.png';
+import apiImgSrc from '../assets/api-main.png';
 import urbanThreadImgSrc from '../assets/urban-thread-main.png';
 import battleshipImgSrc from '../assets/battleship-main.png';
 import Header from './Header';
@@ -24,7 +25,10 @@ const HomePage = () => (
           view published articles while the author has the ability to create,
           edit, and manage content dynamically.
         </p>
-        {/* TODO: add screenshot of project */}
+        <img
+          src={apiImgSrc}
+          alt="Screenshot of the main configuration file displaying the API's overall structure."
+        />
       </article>
       <article>
         <h3>Urban Thread: Mock E-Commerce Store</h3>
