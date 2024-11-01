@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import membersOnlyImgSrc from '../assets/members-only-main.jpg';
+import apiImgSrc from '../assets/api-main.png';
 import inventoryMateImgSrc from '../assets/inventory-mate-main.png';
 import urbanThreadImgSrc from '../assets/urban-thread-main.png';
 import memoryCardImgSrc from '../assets/memory-card-main.png';
@@ -25,20 +25,9 @@ const AllProjectsPage = () => (
           view published articles while the author has the ability to create,
           edit, and manage content dynamically.
         </p>
-        {/* TODO: add screenshot of project */}
-      </article>
-      <article>
-        <h2>Members Only: Exclusive Clubhouse for Anonymous Posts</h2>
-        <p>
-          An Express-based platform designed as an exclusive clubhouse where
-          members can write and share anonymous posts. This project is
-          structured using routes, controllers, and views, focusing on data
-          management with PostgreSQL, user authentication with Passport.js, and
-          secure password handling with bcryptjs.
-        </p>
         <img
-          src={membersOnlyImgSrc}
-          alt="Digital image of multiple devices displaying chat logs."
+          src={apiImgSrc}
+          alt="Screenshot of the main configuration file displaying the API's overall structure."
         />
       </article>
       <article>
