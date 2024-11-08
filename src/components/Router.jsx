@@ -6,6 +6,7 @@ import ProjectPage from './ProjectPage';
 import Blog from './Blog';
 import ArticlePage from './ArticlePage';
 import AboutPage from './AboutPage';
+import ContactPage from './ContactPage';
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const Router = () => {
         {
           path: 'about',
           element: <AboutPage />,
+        },
+        {
+          path: 'contact',
+          element: <ContactPage />,
         },
         {
           path: '*',

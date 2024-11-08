@@ -66,7 +66,7 @@ const HomePage = () => {
           />
         </article>
       </Link>
-      <Link to="/contact">Get in Touch</Link>
+      <Link to="/contact">Get In Touch</Link>
       <Link to="/projects">See All Projects</Link>
     </main>
   );

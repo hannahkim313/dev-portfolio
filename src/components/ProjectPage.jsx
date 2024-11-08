@@ -57,7 +57,7 @@ const ProjectPage = () => {
           If you're interested in collaborating or want to learn more about my
           work, feel free to reach out!
         </p>
-        <Link to="/contact">Get in Touch</Link>
+        <Link to="/contact">Get In Touch</Link>
       </main>
     </>
   );
