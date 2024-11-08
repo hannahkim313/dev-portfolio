@@ -54,9 +54,10 @@ const ProjectPage = () => {
           ))}
         </Swiper>
         <p>
-          Like what you see? Let's collaborate and bring your ideas to life.
+          If you're interested in collaborating or want to learn more about my
+          work, feel free to reach out!
         </p>
-        <Link to="/contact">Let's Connect</Link>
+        <Link to="/contact">Get in Touch</Link>
       </main>
     </>
   );
