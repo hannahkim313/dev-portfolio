@@ -41,7 +41,7 @@ const AllProjectsPage = () => (
           view published articles while the author has the ability to create,
           edit, and manage content dynamically.`,
         mainImg: {
-          apiImgSrc,
+          src: apiImgSrc,
           alt: `Screenshot of the main configuration file displaying the API's 
             overall structure.`,
         },
@@ -70,26 +70,26 @@ const AllProjectsPage = () => (
         ],
         carousel: {
           1: {
-            apiCarousel1,
+            src: apiCarousel1,
             alt: `Screenshot of the authentication and authorization route
               structure.`,
           },
           2: {
-            apiCarousel2,
+            src: apiCarousel2,
             alt: `Screenshot of the user verification process using
               jsonwebtoken.`,
           },
           3: {
-            apiCarousel3,
+            src: apiCarousel3,
             alt: `Screenshot of the user authentication configuration using
               Passport.js and jsonwebtoken.`,
           },
           4: {
-            apiCarousel4,
+            src: apiCarousel4,
             alt: 'Screenshot of the validation and sanitization process.',
           },
           5: {
-            apiCarousel5,
+            src: apiCarousel5,
             alt: `Screenshot of the authentication and authorization controller
               functions that handle requests.`,
           },
@@ -125,7 +125,7 @@ const AllProjectsPage = () => (
           logic. This project enables users to create, read, update, and delete
           (CRUD) categories and items within a structured interface.`,
         mainImg: {
-          inventoryMateImgSrc,
+          src: inventoryMateImgSrc,
           alt: `Screenshot of the home page of InventoryMate featuring a
             navigational sidebar and an overview of the application in the main
             content.`,
@@ -149,24 +149,24 @@ const AllProjectsPage = () => (
         techStack: ['Node.js and Express', 'MongoDB', 'Mongoose', 'Glitch'],
         carousel: {
           1: {
-            inventoryMateCarousel1,
+            src: inventoryMateCarousel1,
             alt: 'Screenshot of all items in the application.',
           },
           2: {
-            inventoryMateCarousel2,
+            src: inventoryMateCarousel2,
             alt: 'Screenshot of a specific item detail page.',
           },
           3: {
-            inventoryMateCarousel3,
+            src: inventoryMateCarousel3,
             alt: 'Screenshot of the form to update an item.',
           },
           4: {
-            inventoryMateCarousel4,
+            src: inventoryMateCarousel4,
             alt: `Screenshot of the painting category with all its items
               listed.`,
           },
           5: {
-            inventoryMateCarousel5,
+            src: inventoryMateCarousel5,
             alt: 'Screenshot of the form to update a category.',
           },
         },
@@ -200,7 +200,7 @@ const AllProjectsPage = () => (
           delivers a seamless shopping experience similar to that of real-world
           e-commerce brands.`,
         mainImg: {
-          urbanThreadImgSrc,
+          src: urbanThreadImgSrc,
           alt: `Screenshot of the home page of Urban Thread featuring a
             navigation header, promotional banner, and 3 images of models
             representing the (fake) brand.`,
@@ -231,18 +231,18 @@ const AllProjectsPage = () => (
         ],
         carousel: {
           1: {
-            urbanThreadCarousel1,
+            src: urbanThreadCarousel1,
             alt: "Screenshot of all products in the men's clothing category",
           },
           2: {
-            urbanThreadCarousel2,
+            src: urbanThreadCarousel2,
             alt: `Screenshot of a product detail page, featuring the product
               title, average 5-star rating, total number of reviews, price,
               product description, and options to add the product to the bag
               or add to the favorites.`,
           },
           3: {
-            urbanThreadCarousel3,
+            src: urbanThreadCarousel3,
             alt: `Screenshot of the shopping cart, displaying all products
               in the cart with their quantity and price as well as the order
               summary with the order total.`,
@@ -279,7 +279,7 @@ const AllProjectsPage = () => (
           from the Nintendo Amiibo API, creating a smooth user experience as
           players attempt to match pairs of cards.`,
         mainImg: {
-          memoryCardImgSrc,
+          src: memoryCardImgSrc,
           alt: `Screenshot of the home page of the memory card game featuring a
             scoreboard at the top and 8 cards with images of different Animal
             Crossing characters laid out below it.`,
@@ -296,15 +296,15 @@ const AllProjectsPage = () => (
         techStack: ['React', 'JavaScript', 'npm'],
         carousel: {
           1: {
-            memoryCardCarousel1,
+            src: memoryCardCarousel1,
             alt: 'Screenshot of a successful round.',
           },
           2: {
-            memoryCardCarousel2,
+            src: memoryCardCarousel2,
             alt: 'Screenshot of the game when a player loses.',
           },
           3: {
-            memoryCardCarousel3,
+            src: memoryCardCarousel3,
             alt: 'Screenshot of the game when a player wins.',
           },
         },
@@ -339,7 +339,7 @@ const AllProjectsPage = () => (
           project showcases algorithmic thinking, grid-based logic, and
           player-vs-AI functionality for an engaging user experience.`,
         mainImg: {
-          battleshipImgSrc,
+          src: battleshipImgSrc,
           alt: `Screenshot of the gameplay featuring the player and opponent's
             game boards with hits and misses.`,
         },
@@ -368,11 +368,11 @@ const AllProjectsPage = () => (
         ],
         carousel: {
           1: {
-            battleshipCarousel1,
+            src: battleshipCarousel1,
             alt: 'Screenshot of the ship placement phase.',
           },
           2: {
-            battleshipCarousel2,
+            src: battleshipCarousel2,
             alt: `Screenshot of the gameplay between the player and the
               opponent, displaying both gameboards with hits, misses, and ships
               displayed on each board.`,
