@@ -3,7 +3,17 @@
 /******************************************************************************/
 
 :root {
-  --color-text: #000000;
+  --text-color: #382415;
+  --background-color: #fff5e2;
+  --background-dark: #f1e3c7;
+  --primary-color: #5c4033;
+  --neutral-color: #d4d4d4;
+  --neutral-dark: #303336;
+  --link-color: #71370e;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
 }
 
 *,
@@ -23,7 +33,7 @@ body {
 }
 
 body {
-  color: var(--color-text);
+  color: var(--text-color);
   font-family: 'Roboto', 'Inter', 'Source Sans 3', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -31,11 +41,16 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--link-color);
 }
 
 li {
   list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 button:hover {
@@ -71,4 +86,15 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.hidden {
+  position: absolute;
+  left: -999999999px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    text-decoration: underline;
+  }
 }
