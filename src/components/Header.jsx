@@ -23,7 +23,7 @@ const Header = () => {
         onClick={handleSidebarToggle}
         aria-label={isSidebarOpen ? 'Close menu' : 'Open menu'}
       >
-        <img src={menuImg} alt="Menu icon" />
+        <img className={styles.menuImg} src={menuImg} alt="Menu icon" />
       </button>
       <Drawer
         anchor="right"

@@ -20,8 +20,12 @@ header {
   flex-shrink: 0;
 }
 
+.menuImg {
+  width: var(--font-size-h2);
+}
+
 .drawerPaper {
-  width: 300px;
+  width: 250px;
   padding: var(--spacing-md);
 }
 
