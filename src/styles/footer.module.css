@@ -19,7 +19,7 @@ footer p {
 }
 
 .authorImg {
-  width: 5rem;
+  width: calc(var(--font-size-base) * 5);
   background-color: var(--color-background);
   border-radius: var(--border-radius-xs);
 }
@@ -48,7 +48,7 @@ footer p {
 }
 
 .socials img {
-  width: 1.5rem;
+  width: var(--font-size-h3);
 }
 
 .copyright {
