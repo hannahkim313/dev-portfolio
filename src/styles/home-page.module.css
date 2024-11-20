@@ -34,6 +34,32 @@
   font-size: var(--font-size-subheading);
 }
 
+.serviceCardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.serviceCard {
+  width: 100%;
+  text-align: center;
+  padding: var(--spacing-md);
+  background-color: var(--color-background-dark);
+  border-radius: var(--border-radius-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.serviceIcon {
+  width: calc(var(--font-size-base) * 10);
+}
+
+.serviceTitle {
+  font-size: var(--font-size-subheading);
+}
+
 .featuredProjects {
   display: flex;
   flex-direction: column;
@@ -80,4 +106,10 @@
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-sm);
+}
+
+@media (min-width: 1024px) {
+  .serviceCardsContainer {
+    flex-direction: row;
+  }
 }

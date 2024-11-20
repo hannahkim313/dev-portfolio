@@ -1,4 +1,7 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
+import purpleFlowerImgSrc from '../assets/flower-purple.png';
+import redFlowerImgSrc from '../assets/flower-red.png';
+import whiteFlowerImgSrc from '../assets/flower-white.png';
 import authorImgSrc from '../assets/portrait-transparent.png';
 import apiImgSrc from '../assets/api-main.png';
 import urbanThreadImgSrc from '../assets/urban-thread-main.png';
@@ -27,6 +30,45 @@ const HomePage = () => {
             websites with a focus on user experience.
           </p>
         </div>
+      </section>
+      <section className={styles.serviceCardsContainer}>
+        <h2 className="hidden">What I Offer</h2>
+        <article className={styles.serviceCard}>
+          <img
+            className={styles.serviceIcon}
+            src={purpleFlowerImgSrc}
+            alt="Decorative purple flower illustration by Hannah Kim"
+          />
+          <h3 className={styles.serviceTitle}>Front-End Development</h3>
+          <p>
+            Building responsive, interactive websites using modern front-end
+            technologies for optimal user experiences.
+          </p>
+        </article>
+        <article className={styles.serviceCard}>
+          <img
+            className={styles.serviceIcon}
+            src={whiteFlowerImgSrc}
+            alt="Decorative white flower illustration by Hannah Kim"
+          />
+          <h3 className={styles.serviceTitle}>Web Design</h3>
+          <p>
+            Creating visually appealing and user-friendly web designs that
+            reflect brand identity.
+          </p>
+        </article>
+        <article className={styles.serviceCard}>
+          <img
+            className={styles.serviceIcon}
+            src={redFlowerImgSrc}
+            alt="Decorative red flower illustration by Hannah Kim"
+          />
+          <h3 className={styles.serviceTitle}>Website Optimization</h3>
+          <p>
+            Optimizing websites for speed, accessibility, and performance across
+            all devices.
+          </p>
+        </article>
       </section>
       <hr className="divider" />
       <section className={styles.featuredProjects}>
