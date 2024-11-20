@@ -1,8 +1,10 @@
 .main {
   padding: var(--spacing-md);
   background-color: var(--color-background);
+  grid-row: 2 / 3;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--spacing-xl);
 }
 

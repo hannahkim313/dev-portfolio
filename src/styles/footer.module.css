@@ -1,6 +1,7 @@
 footer {
   padding: var(--spacing-md);
   background-color: var(--color-primary);
+  grid-row: 3 /4;
   display: flex;
   flex-direction: column;
   align-items: center;

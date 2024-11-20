@@ -130,6 +130,12 @@ h3 {
   isolation: isolate;
 }
 
+.mainContentContainer {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 .cta {
   font-size: var(--font-size-larger);
   font-weight: bold;
@@ -172,3 +178,5 @@ h3 {
     --font-size-base: 1.25rem;
   }
 }
+
+/* TODO: add responsive padding */

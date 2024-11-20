@@ -1,6 +1,7 @@
 header {
   padding: var(--spacing-md);
   background-color: var(--color-background-dark);
+  grid-row: 1 / 2;
   display: flex;
   justify-content: space-between;
   gap: var(--spacing-md);

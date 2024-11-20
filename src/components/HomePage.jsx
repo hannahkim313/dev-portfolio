@@ -108,11 +108,11 @@ const HomePage = () => {
   );
 
   return (
-    <>
+    <div className="mainContentContainer">
       <Header />
       {isHome ? mainContent : <Outlet />}
       <Footer />
-    </>
+    </div>
   );
 };
 
