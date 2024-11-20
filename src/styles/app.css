@@ -155,14 +155,20 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   :root {
     --font-size-base: 0.9rem;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   :root {
     --font-size-base: 1.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --font-size-base: 1.25rem;
   }
 }
