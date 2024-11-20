@@ -1,6 +1,6 @@
 .main {
   padding: var(--spacing-md);
-  background-color: var(--background-color);
+  background-color: var(--color-background);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
@@ -83,5 +83,5 @@
 .divider {
   height: 1px;
   border: none;
-  background-color: var(--primary-light);
+  background-color: var(--color-primary-light);
 }

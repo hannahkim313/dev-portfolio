@@ -19,14 +19,14 @@
     var(--font-size-base) * var(--font-scale) * var(--font-scale)
   );
   --font-size-subheading: calc(var(--font-size-base) * var(--font-scale));
-  --text-color: #382415;
-  --background-color: #fff5e2;
-  --background-dark: #f1e3c7;
-  --primary-color: #5c4033;
-  --primary-light: #a17059;
-  --neutral-color: #d4d4d4;
-  --link-color: #71370e;
-  --cta-color: #9b3708;
+  --color-text: #382415;
+  --color-background: #fff5e2;
+  --color-background-dark: #f1e3c7;
+  --color-primary: #5c4033;
+  --color-primary-light: #a17059;
+  --color-neutral: #d4d4d4;
+  --color-link: #71370e;
+  --color-cta: #9b3708;
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
@@ -54,7 +54,7 @@ body {
 body {
   font-size: var(--font-size-base);
   font-family: 'Roboto Slab', 'Roboto', 'Inter', 'Source Sans 3', sans-serif;
-  color: var(--text-color);
+  color: var(--color-text);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -62,7 +62,7 @@ body {
 a {
   font-family: 'Lato', sans-serif;
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--color-link);
 }
 
 li {
@@ -135,7 +135,7 @@ h3 {
   font-weight: bold;
   color: white;
   padding: var(--spacing-xs) var(--spacing-sm);
-  background-color: var(--link-color);
+  background-color: var(--color-link);
   border-radius: var(--border-radius-xs);
 }
 

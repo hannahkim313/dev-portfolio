@@ -1,6 +1,6 @@
 footer {
   padding: var(--spacing-md);
-  background-color: var(--primary-color);
+  background-color: var(--color-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@ footer p {
 
 .authorImg {
   width: 5rem;
-  background-color: var(--background-color);
+  background-color: var(--color-background);
   border-radius: var(--border-radius-xs);
 }
 

@@ -1,6 +1,6 @@
 header {
   padding: var(--spacing-md);
-  background-color: var(--background-dark);
+  background-color: var(--color-background-dark);
   display: flex;
   justify-content: space-between;
   gap: var(--spacing-md);
@@ -44,5 +44,5 @@ header {
 .divider {
   height: 1px;
   border: none;
-  background-color: var(--neutral-color);
+  background-color: var(--color-neutral);
 }
