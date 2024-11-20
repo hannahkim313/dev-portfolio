@@ -81,9 +81,3 @@
   align-items: center;
   gap: var(--spacing-sm);
 }
-
-.divider {
-  height: 1px;
-  border: none;
-  background-color: var(--color-primary-light);
-}

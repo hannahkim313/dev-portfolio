@@ -28,7 +28,7 @@ const HomePage = () => {
           </p>
         </div>
       </section>
-      <hr className={styles.divider} />
+      <hr className="divider" />
       <section className={styles.featuredProjects}>
         <h2 className={styles.featuredProjectsTitle}>Featured Projects</h2>
         <div className={styles.projectsContainer}>
