@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header>
-      <h2 className={styles.authorInfo}>
+      <h2 className={styles.authorDetails}>
         <span>Hannah Kim</span>
         <span className={styles.authorTitle}>Creative Front-End Developer</span>
       </h2>
@@ -34,7 +34,7 @@ const Header = () => {
         <button onClick={handleSidebarToggle} aria-label="Close menu">
           <img src={closeImg} alt="Close icon" />
         </button>
-        <div className={styles.navListContainer}>
+        <div className={styles.navListsContainer}>
           <nav>
             <h3 className="hidden">Main Navigation</h3>
             <ul className={styles.navList}>

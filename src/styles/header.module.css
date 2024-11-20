@@ -6,13 +6,13 @@ header {
   gap: var(--spacing-md);
 }
 
-.authorInfo {
+.authorDetails {
   display: flex;
   flex-direction: column;
 }
 
 .authorTitle {
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   font-weight: normal;
 }
 
@@ -29,7 +29,7 @@ header {
   align-self: flex-end;
 }
 
-.navListContainer {
+.navListsContainer {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
