@@ -12,7 +12,7 @@ footer p {
   color: white;
 }
 
-.authorContainer {
+.authorSection {
   width: 100%;
   display: flex;
   gap: var(--spacing-sm);
@@ -21,7 +21,7 @@ footer p {
 .authorImg {
   width: 5rem;
   background-color: var(--background-color);
-  border-radius: 0.1rem;
+  border-radius: var(--border-radius-xs);
 }
 
 .authorInfo {
@@ -29,7 +29,7 @@ footer p {
   flex-direction: column;
 }
 
-.navListContainer {
+.navListsContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -52,5 +52,5 @@ footer p {
 }
 
 .copyright {
-  font-size: 0.9rem;
+  font-size: var(--font-size-smaller);
 }

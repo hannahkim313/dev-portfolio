@@ -7,7 +7,7 @@ import styles from '../styles/footer.module.css';
 
 const Footer = () => (
   <footer>
-    <div className={styles.authorContainer}>
+    <div className={styles.authorSection}>
       <img
         className={styles.authorImg}
         src={authorImgSrc}
@@ -18,7 +18,7 @@ const Footer = () => (
         <span>Creative Front-End Developer</span>
       </p>
     </div>
-    <div className={styles.navListContainer}>
+    <div className={styles.navListsContainer}>
       <nav>
         <h3 className="hidden">Main Navigation</h3>
         <ul className={styles.navList}>
