@@ -2,6 +2,10 @@ header {
   padding: var(--spacing-md);
   background-color: var(--color-background-dark);
   grid-row: 1 / 2;
+}
+
+.headerContentContainer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: var(--spacing-md);
@@ -50,4 +54,42 @@ header {
   height: 1px;
   border: none;
   background-color: var(--color-neutral);
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .headerContentContainer {
+    align-items: center;
+  }
+
+  .navList {
+    font-weight: bold;
+    flex-direction: row;
+    gap: var(--spacing-md);
+  }
+
+  .cta {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    padding: var(--spacing-xl);
+  }
+}
+
+@media (min-width: 2560px) {
+  header {
+    justify-items: center;
+  }
+
+  header > * {
+    max-width: 1400px;
+  }
 }

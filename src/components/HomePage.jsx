@@ -39,11 +39,13 @@ const HomePage = () => {
             src={purpleFlowerImgSrc}
             alt="Decorative purple flower illustration by Hannah Kim"
           />
-          <h3 className={styles.serviceTitle}>Front-End Development</h3>
-          <p>
-            Building responsive, interactive websites using modern front-end
-            technologies for optimal user experiences.
-          </p>
+          <div className={styles.serviceDetails}>
+            <h3 className={styles.serviceTitle}>Front-End Development</h3>
+            <p>
+              Building responsive, interactive websites using modern front-end
+              technologies for optimal user experiences.
+            </p>
+          </div>
         </article>
         <article className={styles.serviceCard}>
           <img
@@ -51,11 +53,13 @@ const HomePage = () => {
             src={whiteFlowerImgSrc}
             alt="Decorative white flower illustration by Hannah Kim"
           />
-          <h3 className={styles.serviceTitle}>Web Design</h3>
-          <p>
-            Creating visually appealing and user-friendly web designs that
-            reflect brand identity.
-          </p>
+          <div className={styles.serviceDetails}>
+            <h3 className={styles.serviceTitle}>Web Design</h3>
+            <p>
+              Creating visually appealing and user-friendly web designs that
+              reflect brand identity.
+            </p>
+          </div>
         </article>
         <article className={styles.serviceCard}>
           <img
@@ -63,11 +67,13 @@ const HomePage = () => {
             src={redFlowerImgSrc}
             alt="Decorative red flower illustration by Hannah Kim"
           />
-          <h3 className={styles.serviceTitle}>Website Optimization</h3>
-          <p>
-            Optimizing websites for speed, accessibility, and performance across
-            all devices.
-          </p>
+          <div className={styles.serviceDetails}>
+            <h3 className={styles.serviceTitle}>Website Optimization</h3>
+            <p>
+              Optimizing websites for speed, accessibility, and performance
+              across all devices.
+            </p>
+          </div>
         </article>
       </section>
       <hr className="divider" />

@@ -55,3 +55,29 @@ footer p {
 .copyright {
   font-size: var(--font-size-smaller);
 }
+
+@media (min-width: 768px) {
+  footer {
+    padding: var(--spacing-lg);
+  }
+
+  footer > * {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer {
+    padding: var(--spacing-xl);
+  }
+
+  footer > * {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 2560px) {
+  footer > * {
+    max-width: 1400px;
+  }
+}

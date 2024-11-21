@@ -137,10 +137,9 @@ h3 {
 }
 
 .cta {
-  font-size: var(--font-size-larger);
   font-weight: bold;
   color: white;
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-link);
   border-radius: var(--border-radius-xs);
 }
@@ -186,5 +185,4 @@ h3 {
   }
 }
 
-/* TODO: add responsive padding */
 /* TODO: fix project thumbnails */
