@@ -26,6 +26,7 @@
   --color-primary-light: #a17059;
   --color-neutral: #d4d4d4;
   --color-link: #71370e;
+  --color-link-dark: #53280a;
   --color-cta: #9b3708;
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -142,11 +143,21 @@ h3 {
   padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-link);
   border-radius: var(--border-radius-xs);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cta:hover {
+  text-decoration: none;
+  background-color: var(--color-link-dark);
 }
 
 .cta-secondary {
   font-size: var(--font-size-smaller);
   text-decoration: underline;
+}
+
+.cta-secondary:hover {
+  text-decoration: none;
 }
 
 .divider {
