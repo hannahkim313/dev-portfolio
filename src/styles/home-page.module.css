@@ -90,7 +90,7 @@
 
 .projectThumbnailContainer {
   width: 100%;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
   border-radius: var(--border-radius-xs);
 }
@@ -99,12 +99,18 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   transition: transform 0.3s ease-in-out;
 }
 
 .projectThumbnail:hover {
   transform: scale(1.05);
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
 }
 
 .ctaContainer {
@@ -123,12 +129,16 @@
   .authorSection,
   .serviceCardsContainer,
   .featuredProjects {
-    max-width: 80%;
+    max-width: 85%;
   }
 
   .serviceCard {
     text-align: left;
     flex-direction: row;
+  }
+
+  .projectThumbnailContainer {
+    height: 300px;
   }
 }
 
@@ -146,6 +156,16 @@
     text-align: center;
     flex-direction: column;
   }
+
+  .projectCard {
+    flex-direction: row;
+    gap: var(--spacing-md);
+  }
+
+  .projectThumbnailContainer {
+    width: 400px;
+    height: 300px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -154,7 +174,12 @@
   }
 
   .serviceCardsContainer {
-    max-width: 80%;
+    max-width: 85%;
+  }
+
+  .projectThumbnailContainer {
+    width: 500px;
+    height: 350px;
   }
 }
 

@@ -90,16 +90,18 @@ const HomePage = () => {
                 />
               </div>
             </Link>
-            <Link to="/projects/blog-api">
-              <h3>My Personal Blog API</h3>
-            </Link>
-            <p>
-              A full-stack blog platform built with Prisma, PostgreSQL, and
-              Node/Express.js. This project features role-based authentication,
-              a secure comments system, and effective article management. Users
-              can view published articles while the author has the ability to
-              create, edit, and manage content dynamically.
-            </p>
+            <div className={styles.projectDetails}>
+              <Link to="/projects/blog-api">
+                <h3>My Personal Blog API</h3>
+              </Link>
+              <p>
+                A full-stack blog platform built with Prisma, PostgreSQL, and
+                Node/Express.js. This project features role-based
+                authentication, a secure comments system, and effective article
+                management. Users can view published articles while the author
+                has the ability to create, edit, and manage content dynamically.
+              </p>
+            </div>
           </article>
           <article className={styles.projectCard}>
             <Link to="/projects/mock-e-commerce-store">
@@ -111,16 +113,18 @@ const HomePage = () => {
                 />
               </div>
             </Link>
-            <Link to="/projects/mock-e-commerce-store">
-              <h3>Urban Thread: Mock E-Commerce Store</h3>
-            </Link>
-            <p>
-              A responsive e-commerce application powered by the FakeStore API,
-              allowing users to browse products and manage items in their cart.
-              This project emphasizes a user-friendly design and delivers a
-              seamless shopping experience similar to that of real-world
-              e-commerce brands.
-            </p>
+            <div className={styles.projectDetails}>
+              <Link to="/projects/mock-e-commerce-store">
+                <h3>Urban Thread: Mock E-Commerce Store</h3>
+              </Link>
+              <p>
+                A responsive e-commerce application powered by the FakeStore
+                API, allowing users to browse products and manage items in their
+                cart. This project emphasizes a user-friendly design and
+                delivers a seamless shopping experience similar to that of
+                real-world e-commerce brands.
+              </p>
+            </div>
           </article>
           <article className={styles.projectCard}>
             <Link to="/projects/battleship">
@@ -132,15 +136,17 @@ const HomePage = () => {
                 />
               </div>
             </Link>
-            <Link to="/projects/battleship">
-              <h3>Battleship Game</h3>
-            </Link>
-            <p>
-              A web-based recreation of the classic Battleship game designed
-              with a simple user interface and interactive gameplay. This
-              project showcases algorithmic thinking, grid-based logic, and
-              player-vs-AI functionality for an engaging user experience.
-            </p>
+            <div className={styles.projectDetails}>
+              <Link to="/projects/battleship">
+                <h3>Battleship Game</h3>
+              </Link>
+              <p>
+                A web-based recreation of the classic Battleship game designed
+                with a simple user interface and interactive gameplay. This
+                project showcases algorithmic thinking, grid-based logic, and
+                player-vs-AI functionality for an engaging user experience.
+              </p>
+            </div>
           </article>
         </div>
       </section>
