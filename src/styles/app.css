@@ -172,6 +172,12 @@ h3 {
   left: -999999999px;
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-xs);
+}
+
 @media (hover: hover) and (pointer: fine) {
   a:hover {
     text-decoration: underline;
