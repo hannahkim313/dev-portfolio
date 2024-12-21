@@ -19,12 +19,12 @@ const ProjectPage = () => {
         </a>
         <p>
           <strong>Technology Stack:</strong>
-          <ul>
-            {state.techStack.map((tech) => (
-              <li key={uuidv4()}>{tech}</li>
-            ))}
-          </ul>
         </p>
+        <ul>
+          {state.techStack.map((tech) => (
+            <li key={uuidv4()}>{tech}</li>
+          ))}
+        </ul>
       </aside>
       <main>
         <h1>{state.title}</h1>
@@ -32,13 +32,11 @@ const ProjectPage = () => {
         <p>{state.description}</p>
         <img src={state.mainImg.src} alt={state.mainImg.alt} />
         <h2>Key Features</h2>
-        <p>
-          <ul>
-            {state.features.map((feature) => (
-              <li key={uuidv4()}>{feature}</li>
-            ))}
-          </ul>
-        </p>
+        <ul>
+          {state.features.map((feature) => (
+            <li key={uuidv4()}>{feature}</li>
+          ))}
+        </ul>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}

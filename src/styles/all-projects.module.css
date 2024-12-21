@@ -1,0 +1,47 @@
+.main {
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.introSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.githubCta {
+  text-align: center;
+  font-size: var(--font-size-subheading);
+}
+
+.contactCta {
+  text-align: center;
+  font-size: var(--font-size-larger);
+  background-color: var(--color-background-dark);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+/* TODO: style for different screen sizes */
