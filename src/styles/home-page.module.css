@@ -122,6 +122,10 @@
   gap: var(--spacing-sm);
 }
 
+.ctaSecondaryCustom {
+  font-size: var(--font-size-smaller);
+}
+
 @media (min-width: 768px) {
   .main {
     padding: var(--spacing-lg);

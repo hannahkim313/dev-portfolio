@@ -152,7 +152,6 @@ h3 {
 }
 
 .cta-secondary {
-  font-size: var(--font-size-smaller);
   text-decoration: underline;
 }
 
@@ -201,5 +200,3 @@ h3 {
     --font-size-base: 1.25rem;
   }
 }
-
-/* TODO: fix project thumbnails */

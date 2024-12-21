@@ -154,7 +154,10 @@ const HomePage = () => {
         <Link className="cta" to="/contact">
           Get In Touch
         </Link>
-        <Link className="cta-secondary" to="/projects">
+        <Link
+          className={`cta-secondary ${styles.ctaSecondaryCustom}`}
+          to="/projects"
+        >
           See All Projects
         </Link>
       </div>
