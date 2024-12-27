@@ -27,14 +27,14 @@ const projects = [
     title: 'My Personal Blog API',
     date: 'Nov 2024',
     description: `A full-stack blog platform built with Prisma, PostgreSQL,
-    and Node/Express.js. This project features role-based authentication,
-    a secure comments system, and effective article management. Users can
-    view published articles while the author has the ability to create,
-    edit, and manage content dynamically.`,
+      and Node/Express.js. This project features role-based authentication,
+      a secure comments system, and effective article management. Users can
+      view published articles while the author has the ability to create,
+      edit, and manage content dynamically.`,
     mainImg: {
       src: apiImgSrc,
       alt: `Screenshot of the main configuration file displaying the API's 
-      overall structure.`,
+        overall structure.`,
     },
     features: [
       `User authentication and authorization are handled through login and
@@ -63,17 +63,17 @@ const projects = [
       1: {
         src: apiCarousel1,
         alt: `Screenshot of the authentication and authorization route
-        structure.`,
+          structure.`,
       },
       2: {
         src: apiCarousel2,
         alt: `Screenshot of the user verification process using
-        jsonwebtoken.`,
+          jsonwebtoken.`,
       },
       3: {
         src: apiCarousel3,
         alt: `Screenshot of the user authentication configuration using
-        Passport.js and jsonwebtoken.`,
+          Passport.js and jsonwebtoken.`,
       },
       4: {
         src: apiCarousel4,
@@ -82,7 +82,7 @@ const projects = [
       5: {
         src: apiCarousel5,
         alt: `Screenshot of the authentication and authorization controller
-        functions that handle requests.`,
+          functions that handle requests.`,
       },
     },
     liveLink: null,
@@ -94,31 +94,31 @@ const projects = [
     title: 'InventoryMate: A Simple Inventory Management Application',
     date: 'May 2024',
     description: `An inventory management application built with Express
-            and MongoDB, which features site-specific routes, EJS templates for
-            dynamic views, and an MVC architecture to ensure a clear separation of
-            logic. This project enables users to create, read, update, and delete
-            (CRUD) categories and items within a structured interface.`,
+      and MongoDB, which features site-specific routes, EJS templates for
+      dynamic views, and an MVC architecture to ensure a clear separation of
+      logic. This project enables users to create, read, update, and delete
+      (CRUD) categories and items within a structured interface.`,
     mainImg: {
       src: inventoryMateImgSrc,
       alt: `Screenshot of the home page of InventoryMate featuring a
-              navigational sidebar and an overview of the application in the main
-              content.`,
+        navigational sidebar and an overview of the application in the main
+        content.`,
     },
     features: [
       `Inventory data management uses MongoDB with Mongoose to handle
-              categories and items within the database.`,
+      categories and items within the database.`,
       `The application is structured using the MVC pattern, organizing logic
-              into models, views, and controllers for clear separation of
-              concerns.`,
+      into models, views, and controllers for clear separation of
+      concerns.`,
       `Routes are set up to return specific resources and views, making
-              navigation intuitive for users and the application easier to
-              maintain.`,
+      navigation intuitive for users and the application easier to
+      maintain.`,
       `CRUD functionality is fully implemented, allowing users to create,
-              read, update, and delete categories and items.`,
+      read, update, and delete categories and items.`,
       `Forms are designed with EJS templates for dynamic data handling
-              of form submissions.`,
+      of form submissions.`,
       `User inputs are validated and sanitized with centralized error
-              handling for consistent management,`,
+      handling for consistent management,`,
     ],
     techStack: ['Node.js and Express', 'MongoDB', 'Mongoose', 'Glitch'],
     carousel: {
@@ -136,8 +136,7 @@ const projects = [
       },
       4: {
         src: inventoryMateCarousel4,
-        alt: `Screenshot of the painting category with all its items
-                listed.`,
+        alt: 'Screenshot of the painting category with all its items listed.',
       },
       5: {
         src: inventoryMateCarousel5,
@@ -153,31 +152,31 @@ const projects = [
     title: 'Urban Thread: Mock E-Commerce Store',
     date: 'July 2024',
     description: `A responsive e-commerce application powered by the
-            FakeStore API, allowing users to browse products and manage items in
-            their cart. This project emphasizes a user-friendly design and
-            delivers a seamless shopping experience similar to that of real-world
-            e-commerce brands.`,
+      FakeStore API, allowing users to browse products and manage items in
+      their cart. This project emphasizes a user-friendly design and
+      delivers a seamless shopping experience similar to that of real-world
+      e-commerce brands.`,
     mainImg: {
       src: urbanThreadImgSrc,
       alt: `Screenshot of the home page of Urban Thread featuring a
-              navigation header, promotional banner, and 3 images of models
-              representing the (fake) brand.`,
+        navigation header, promotional banner, and 3 images of models
+        representing the (fake) brand.`,
     },
     features: [
       `Product data is dynamically fetched from the FakeStore API,
-              simulating a realistic shopping experience for users with product
-              details and categories.`,
+      simulating a realistic shopping experience for users with product
+      details and categories.`,
       `Client-side routing is handled with React Router, allowing users to
-              navigate between product listings, individual product pages,
-              and the shopping cart.`,
+      navigate between product listings, individual product pages,
+      and the shopping cart.`,
       `State management ensures that the shopping cart and product
-              selections persist as users explore the store.`,
+      selections persist as users explore the store.`,
       `Components are styles with CSS Modules to enable modular and scoped
-              styling for a cleaner codebase.`,
+      styling for a cleaner codebase.`,
       `PropTypes are used for type-checking component props, helping to
-              prevent runtime errors.`,
+      prevent runtime errors.`,
       `Testing is conducted with Jest and Vitest to ensure the stability of
-              components and interactions.`,
+      components and interactions.`,
     ],
     techStack: [
       'React',
@@ -195,15 +194,15 @@ const projects = [
       2: {
         src: urbanThreadCarousel2,
         alt: `Screenshot of a product detail page, featuring the product
-                title, average 5-star rating, total number of reviews, price,
-                product description, and options to add the product to the bag
-                or add to the favorites.`,
+          title, average 5-star rating, total number of reviews, price,
+          product description, and options to add the product to the bag
+          or add to the favorites.`,
       },
       3: {
         src: urbanThreadCarousel3,
         alt: `Screenshot of the shopping cart, displaying all products
-                in the cart with their quantity and price as well as the order
-                summary with the order total.`,
+          in the cart with their quantity and price as well as the order
+          summary with the order total.`,
       },
     },
     liveLink: 'https://shopping-cart-c0j.pages.dev/',
@@ -215,15 +214,15 @@ const projects = [
     title: 'Memory Card Game: Interactive Memory Challenge',
     date: 'Dec 2023',
     description: `An interactive memory card game developed with React to
-    challenge players' memory and recall abilities. This project utilizes
-    hooks for managing state and side effects while fetching card data
-    from the Nintendo Amiibo API, creating a smooth user experience as
-    players attempt to match pairs of cards.`,
+      challenge players' memory and recall abilities. This project utilizes
+      hooks for managing state and side effects while fetching card data
+      from the Nintendo Amiibo API, creating a smooth user experience as
+      players attempt to match pairs of cards.`,
     mainImg: {
       src: memoryCardImgSrc,
       alt: `Screenshot of the home page of the memory card game featuring a
-      scoreboard at the top and 8 cards with images of different Animal
-      Crossing characters laid out below it.`,
+        scoreboard at the top and 8 cards with images of different Animal
+        Crossing characters laid out below it.`,
     },
     features: [
       `Card images are dynamically fetched from the Nintendo Amiibo API,
@@ -258,29 +257,29 @@ const projects = [
     title: 'Battleship Game',
     date: 'Nov 2023',
     description: `A web-based recreation of the classic Battleship game
-            designed with a simple user interface and interactive gameplay. This
-            project showcases algorithmic thinking, grid-based logic, and
-            player-vs-AI functionality for an engaging user experience.`,
+      designed with a simple user interface and interactive gameplay. This
+      project showcases algorithmic thinking, grid-based logic, and
+      player-vs-AI functionality for an engaging user experience.`,
     mainImg: {
       src: battleshipImgSrc,
       alt: `Screenshot of the gameplay featuring the player and opponent's
-              game boards with hits and misses.`,
+        game boards with hits and misses.`,
     },
     features: [
       `Pure JavaScript application created to strengthen programming
-              fundamentals without frameworks, focusing on core logic and
-              DOM manipulation.`,
+      fundamentals without frameworks, focusing on core logic and
+      DOM manipulation.`,
       `Modular design to separate app logic from DOM manipulation and uses
-              factory functions for Ship, Gameboard, and Ship objects to maintain
-              clean and organized code.`,
+      factory functions for Ship, Gameboard, and Ship objects to maintain
+      clean and organized code.`,
       `Interactive gameplay driven by event listeners that allow players to
-              place ships, adjust positions, and attack the opponent's board, with
-              color indicators (red for hits, blue for misses, and grey for
-              ships) to provide visual feedback.`,
+      place ships, adjust positions, and attack the opponent's board, with
+      color indicators (red for hits, blue for misses, and grey for
+      ships) to provide visual feedback.`,
       `Single-player mode featuring a computer opponent that makes random
-              moves, adding a challenge for solo gameplay.`,
+      moves, adding a challenge for solo gameplay.`,
       `Test-Driven Development with Jest, ensuring reliable game mechanics
-              and smooth interactions through unit testing.`,
+      and smooth interactions through unit testing.`,
     ],
     techStack: [
       'JavaScript',
@@ -297,8 +296,8 @@ const projects = [
       2: {
         src: battleshipCarousel2,
         alt: `Screenshot of the gameplay between the player and the
-                opponent, displaying both gameboards with hits, misses, and ships
-                displayed on each board.`,
+          opponent, displaying both gameboards with hits, misses, and ships
+          displayed on each board.`,
       },
     },
     liveLink: 'https://hannahkim313.github.io/battleship/',
