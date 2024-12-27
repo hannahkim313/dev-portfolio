@@ -91,13 +91,13 @@ const projects = [
     isFeatured: true,
   },
   {
-    title: 'InventoryMate: A Simple Inventory Management Application',
+    title: 'InventoryMate: Inventory Management Application',
     date: 'May 2024',
     description: `An inventory management application built with Express
-      and MongoDB, which features site-specific routes, EJS templates for
-      dynamic views, and an MVC architecture to ensure a clear separation of
-      logic. This project enables users to create, read, update, and delete
-      (CRUD) categories and items within a structured interface.`,
+      and MongoDB, featuring site-specific routes, EJS templates for
+      dynamic views, and an MVC architecture. This project enables users to
+      create, read, update, and delete (CRUD) categories and items within a
+      structured interface.`,
     mainImg: {
       src: inventoryMateImgSrc,
       alt: `Screenshot of the home page of InventoryMate featuring a
@@ -211,7 +211,7 @@ const projects = [
     isFeatured: true,
   },
   {
-    title: 'Memory Card Game: Interactive Memory Challenge',
+    title: 'Memory Game: Interactive Memory Challenge',
     date: 'Dec 2023',
     description: `An interactive memory card game developed with React to
       challenge players' memory and recall abilities. This project utilizes
