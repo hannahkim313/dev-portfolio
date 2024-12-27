@@ -5,15 +5,18 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const ProjectPage = () => {
   const location = useLocation();
+
   const state = location.state;
 
   return (
     <>
       <aside>
         <h2>Project Details</h2>
-        <a href={state.liveLink} target="_blank">
-          View Demo
-        </a>
+        {state.liveLink && (
+          <a href={state.liveLink} target="_blank">
+            View Demo
+          </a>
+        )}
         <a href={state.sourceCode} target="_blank">
           View on GitHub
         </a>
