@@ -14,6 +14,29 @@ const HomePage = () => {
   const location = useLocation();
 
   const isHome = location.pathname === '/';
+  const services = [
+    {
+      imgSrc: purpleFlowerImgSrc,
+      imgAlt: 'Decorative purple flower illustration by Hannah Kim',
+      title: 'Front-End Development',
+      description: `Building responsive, interactive websites using modern
+        front-end technologies for optimal user experiences.`,
+    },
+    {
+      imgSrc: whiteFlowerImgSrc,
+      imgAlt: 'Decorative white flower illustration by Hannah Kim',
+      title: 'Web Design',
+      description: `Creating visually appealing and user-friendly web designs
+        that reflect brand identity.`,
+    },
+    {
+      imgSrc: redFlowerImgSrc,
+      imgAlt: 'Decorative red flower illustration by Hannah Kim',
+      title: 'Website Optimization',
+      description: `Optimizing websites for speed, accessibility, and
+        performance across all devices.`,
+    },
+  ];
 
   const mainContent = (
     <main className={styles.main}>
@@ -33,48 +56,19 @@ const HomePage = () => {
       </section>
       <section className={styles.serviceCardsContainer}>
         <h2 className="hidden">What I Offer</h2>
-        <article className={styles.serviceCard}>
-          <img
-            className={styles.serviceIcon}
-            src={purpleFlowerImgSrc}
-            alt="Decorative purple flower illustration by Hannah Kim"
-          />
-          <div className={styles.serviceDetails}>
-            <h3 className={styles.serviceTitle}>Front-End Development</h3>
-            <p>
-              Building responsive, interactive websites using modern front-end
-              technologies for optimal user experiences.
-            </p>
-          </div>
-        </article>
-        <article className={styles.serviceCard}>
-          <img
-            className={styles.serviceIcon}
-            src={whiteFlowerImgSrc}
-            alt="Decorative white flower illustration by Hannah Kim"
-          />
-          <div className={styles.serviceDetails}>
-            <h3 className={styles.serviceTitle}>Web Design</h3>
-            <p>
-              Creating visually appealing and user-friendly web designs that
-              reflect brand identity.
-            </p>
-          </div>
-        </article>
-        <article className={styles.serviceCard}>
-          <img
-            className={styles.serviceIcon}
-            src={redFlowerImgSrc}
-            alt="Decorative red flower illustration by Hannah Kim"
-          />
-          <div className={styles.serviceDetails}>
-            <h3 className={styles.serviceTitle}>Website Optimization</h3>
-            <p>
-              Optimizing websites for speed, accessibility, and performance
-              across all devices.
-            </p>
-          </div>
-        </article>
+        {services.map((service) => (
+          <article key={uuidv4()} className={styles.serviceCard}>
+            <img
+              className={styles.serviceIcon}
+              src={service.imgSrc}
+              alt={service.imgAlt}
+            />
+            <div className={styles.serviceDetails}>
+              <h3 className={styles.serviceTitle}>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          </article>
+        ))}
       </section>
       <hr className="divider" />
       <section className={styles.featuredProjects}>
