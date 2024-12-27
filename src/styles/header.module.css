@@ -50,6 +50,10 @@ header {
   gap: var(--spacing-sm);
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .divider {
   height: 1px;
   border: none;
@@ -93,5 +97,3 @@ header {
     max-width: 1400px;
   }
 }
-
-/* TODO: add hover/active states in header nav links */
