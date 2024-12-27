@@ -27,6 +27,31 @@
   gap: var(--spacing-sm);
 }
 
+.projectThumbnailContainer {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: var(--border-radius-xs);
+}
+
+.projectThumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.projectThumbnail:hover {
+  transform: scale(1.05);
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
 .githubCta {
   text-align: center;
   font-size: var(--font-size-subheading);
@@ -36,6 +61,7 @@
   text-align: center;
   font-size: var(--font-size-larger);
   background-color: var(--color-background-dark);
+  margin-bottom: var(--spacing-xl);
   padding: var(--spacing-md);
   border-radius: var(--border-radius-xs);
   display: flex;
@@ -45,3 +71,60 @@
 }
 
 /* TODO: style for different screen sizes */
+
+@media (min-width: 768px) {
+  .main {
+    padding: var(--spacing-lg);
+  }
+
+  .introSection,
+  .projectsContainer,
+  .contactCta {
+    max-width: 85%;
+  }
+
+  .projectThumbnailContainer {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introSection {
+    max-width: 60%;
+  }
+
+  .projectCard {
+    flex-direction: row;
+    gap: var(--spacing-md);
+  }
+
+  .projectThumbnailContainer {
+    width: 400px;
+    height: 300px;
+  }
+
+  .contactCta {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main {
+    padding: var(--spacing-xl);
+  }
+
+  .projectThumbnailContainer {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .main > * {
+    max-width: 1400px;
+  }
+
+  .introSection {
+    max-width: 30%;
+  }
+}
