@@ -9,7 +9,7 @@ const AllProjectsPage = () => {
     <main className={styles.main}>
       <section className={styles.introSection}>
         <h1>Projects I've Created</h1>
-        <p>
+        <p className={styles.introSummary}>
           With a focus on design and front-end development while exploring
           back-end technologies and databases.
         </p>

@@ -15,6 +15,10 @@
   gap: var(--spacing-xs);
 }
 
+.introSummary {
+  font-size: var(--font-size-subheading);
+}
+
 .projectsContainer {
   display: flex;
   flex-direction: column;
