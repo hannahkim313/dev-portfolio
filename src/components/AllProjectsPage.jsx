@@ -7,7 +7,7 @@ import styles from '../styles/all-projects.module.css';
 const AllProjectsPage = () => {
   return (
     <main className={styles.main}>
-      <section className={styles.introSection}>
+      <section className={`pageIntro ${styles.introSection}`}>
         <h1>Projects I've Created</h1>
         <p className={styles.introSummary}>
           With a focus on design and front-end development while exploring
@@ -21,12 +21,12 @@ const AllProjectsPage = () => {
       </div>
       <p className={styles.githubCta}>
         Check out all my projects on{' '}
-        <a className="cta-secondary" href="https://github.com/hannahkim313">
+        <a className="ctaSecondary" href="https://github.com/hannahkim313">
           GitHub
         </a>
         .
       </p>
-      <div className={styles.contactCta}>
+      <div className={`contentEnd ${styles.contactCta}`}>
         <p>
           Like what you see? Let's collaborate and bring your ideas to life.
         </p>

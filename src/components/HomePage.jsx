@@ -40,7 +40,7 @@ const HomePage = () => {
 
   const mainContent = (
     <main className={styles.main}>
-      <section className={styles.authorSection}>
+      <section className={`pageIntro ${styles.authorSection}`}>
         <img
           className={styles.authorImg}
           src={authorImgSrc}
@@ -72,7 +72,9 @@ const HomePage = () => {
       </section>
       <hr className="divider" />
       <section className={styles.featuredProjects}>
-        <h2 className={styles.featuredProjectsTitle}>Featured Projects</h2>
+        <h2 className={`sectionHeading ${styles.featuredProjectsTitle}`}>
+          Featured Projects
+        </h2>
         <div className={styles.projectsContainer}>
           {projects
             .filter((project) => project.isFeatured)
@@ -81,12 +83,12 @@ const HomePage = () => {
             ))}
         </div>
       </section>
-      <div className={styles.ctaContainer}>
+      <div className={`contentEnd ${styles.ctaContainer}`}>
         <Link className="cta" to="/contact">
           Get In Touch
         </Link>
         <Link
-          className={`cta-secondary ${styles.ctaSecondaryCustom}`}
+          className={`ctaSecondary ${styles.ctaSecondaryCustom}`}
           to="/projects"
         >
           See All Projects

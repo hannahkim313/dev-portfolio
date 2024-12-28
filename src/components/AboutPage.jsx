@@ -3,7 +3,7 @@ import styles from '../styles/about-page.module.css';
 
 const AboutPage = () => (
   <main className={styles.main}>
-    <section className={styles.introSection}>
+    <section className={`pageIntro ${styles.introSection}`}>
       <h1 className={styles.introHeading}>About Hannah Kim</h1>
       <p>
         I'm a self-taught software engineer with a background in illustration.
@@ -43,7 +43,7 @@ const AboutPage = () => (
           Although my primary focus is front-end development, building and
           integrating my own{' '}
           <Link
-            className={`cta-secondary ${styles.ctaSecondaryBold}`}
+            className={`ctaSecondary ${styles.ctaSecondaryBold}`}
             to="/projects/blog-api"
           >
             blog API
@@ -78,12 +78,12 @@ const AboutPage = () => (
         </p>
       </div>
     </section>
-    <div className={styles.ctaContainer}>
+    <div className={`contentEnd ${styles.ctaContainer}`}>
       <Link className="cta" to="/contact">
         Get In Touch
       </Link>
       <Link
-        className={`cta-secondary ${styles.ctaSecondarySmaller}`}
+        className={`ctaSecondary ${styles.ctaSecondarySmaller}`}
         to="/projects"
       >
         See All Projects

@@ -137,6 +137,18 @@ h3 {
   grid-template-rows: auto 1fr auto;
 }
 
+.pageIntro {
+  margin-bottom: var(--spacing-xl);
+}
+
+.sectionHeading {
+  margin-bottom: var(--spacing-md);
+}
+
+.contentEnd {
+  margin-bottom: var(--spacing-xl);
+}
+
 .cta {
   font-weight: bold;
   color: white;
@@ -151,11 +163,11 @@ h3 {
   background-color: var(--color-link-dark);
 }
 
-.cta-secondary {
+.ctaSecondary {
   text-decoration: underline;
 }
 
-.cta-secondary:hover {
+.ctaSecondary:hover {
   text-decoration: none;
 }
 
