@@ -20,13 +20,11 @@ const AllProjectsPage = () => {
         ))}
       </div>
       <p className={styles.githubCta}>
-        <strong>
-          Check out all my projects on{' '}
-          <a className="cta-secondary" href="https://github.com/hannahkim313">
-            GitHub
-          </a>
-          .
-        </strong>
+        Check out all my projects on{' '}
+        <a className="cta-secondary" href="https://github.com/hannahkim313">
+          GitHub
+        </a>
+        .
       </p>
       <div className={styles.contactCta}>
         <p>

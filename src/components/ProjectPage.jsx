@@ -20,9 +20,7 @@ const ProjectPage = () => {
         <a href={state.sourceCode} target="_blank">
           View on GitHub
         </a>
-        <p>
-          <strong>Technology Stack:</strong>
-        </p>
+        <p>Technology Stack:</p>
         <ul>
           {state.techStack.map((tech) => (
             <li key={uuidv4()}>{tech}</li>

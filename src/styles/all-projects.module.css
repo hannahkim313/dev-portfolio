@@ -24,6 +24,7 @@
 .githubCta {
   text-align: center;
   font-size: var(--font-size-subheading);
+  font-weight: bold;
 }
 
 .contactCta {

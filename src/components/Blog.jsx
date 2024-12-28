@@ -41,7 +41,7 @@ const Blog = () => {
       {error && <p>{error}</p>}
       {data && data.articles.length === 0 && (
         <>
-          <strong>No Articles Yet!</strong>
+          <p>No Articles Yet!</p>
           <p>
             It looks like there aren't any articles published at the moment. In
             the meantime, feel free to check back later as I work hard to bring
