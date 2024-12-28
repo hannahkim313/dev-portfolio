@@ -1,0 +1,51 @@
+.main {
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.authorImg {
+  width: calc(var(--font-size-h1) * 5);
+}
+
+.introSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.skillsSection,
+.goalsSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.ctaContainer {
+  font-size: var(--font-size-subheading);
+  margin-bottom: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.ctaSecondaryBold {
+  font-weight: bold;
+}
+
+.ctaSecondarySmaller {
+  font-size: var(--font-size-smaller);
+}
