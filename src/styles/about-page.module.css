@@ -8,15 +8,20 @@
   gap: var(--spacing-xl);
 }
 
-.authorImg {
-  width: calc(var(--font-size-h1) * 5);
-}
-
 .introSection {
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--spacing-md);
+}
+
+.introHeading {
+  text-align: center;
+}
+
+.introDetails {
+  display: flex;
+  flex-direction: column;
   gap: var(--spacing-xs);
 }
 

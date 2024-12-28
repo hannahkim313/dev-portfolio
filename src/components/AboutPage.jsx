@@ -1,16 +1,10 @@
 import { Link } from 'react-router-dom';
-import authorImgSrc from '../assets/portrait-transparent.png';
 import styles from '../styles/about-page.module.css';
 
 const AboutPage = () => (
   <main className={styles.main}>
     <section className={styles.introSection}>
-      <img
-        className={styles.authorImg}
-        src={authorImgSrc}
-        alt="Digital illustration of Hannah Kim"
-      />
-      <h1>About Hannah Kim</h1>
+      <h1 className={styles.introHeading}>About Hannah Kim</h1>
       <p>
         I'm a self-taught software engineer with a background in illustration.
         Motivated by my passion for enhancing user experience through accessible
