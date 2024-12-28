@@ -64,7 +64,7 @@ const HomePage = () => {
               alt={service.imgAlt}
             />
             <div className={styles.serviceDetails}>
-              <h3 className={styles.serviceTitle}>{service.title}</h3>
+              <h3>{service.title}</h3>
               <p>{service.description}</p>
             </div>
           </article>

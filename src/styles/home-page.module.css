@@ -62,10 +62,6 @@
   width: calc(var(--font-size-base) * 10);
 }
 
-.serviceTitle {
-  font-size: var(--font-size-subheading);
-}
-
 .featuredProjects {
   display: flex;
   flex-direction: column;
