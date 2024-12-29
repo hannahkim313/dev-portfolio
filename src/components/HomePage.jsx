@@ -39,7 +39,7 @@ const HomePage = () => {
   ];
 
   const mainContent = (
-    <main className={styles.main}>
+    <main>
       <section className={`pageIntro ${styles.authorSection}`}>
         <img
           className={styles.authorImg}

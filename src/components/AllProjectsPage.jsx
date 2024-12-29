@@ -6,7 +6,7 @@ import styles from '../styles/all-projects.module.css';
 
 const AllProjectsPage = () => {
   return (
-    <main className={styles.main}>
+    <main>
       <section className={`pageIntro ${styles.introSection}`}>
         <h1>Projects I've Created</h1>
         <p className={styles.introSummary}>

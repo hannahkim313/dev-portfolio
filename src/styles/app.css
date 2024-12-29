@@ -79,6 +79,16 @@ button:hover {
   cursor: pointer;
 }
 
+main {
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
 img,
 picture,
 video,
@@ -213,10 +223,40 @@ h3 {
   :root {
     --font-size-base: 1.125rem;
   }
+
+  main {
+    padding: var(--spacing-lg);
+  }
+
+  main > * {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pageIntro {
+    max-width: 60%;
+  }
 }
 
 @media (min-width: 1200px) {
   :root {
     --font-size-base: 1.25rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    padding: var(--spacing-xl);
+  }
+}
+
+@media (min-width: 2560px) {
+  main > * {
+    max-width: 1400px;
+  }
+
+  .pageIntro {
+    max-width: 30%;
   }
 }

@@ -1,13 +1,3 @@
-.main {
-  padding: var(--spacing-md);
-  background-color: var(--color-background);
-  grid-row: 2 / 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-xl);
-}
-
 .authorSection {
   text-align: center;
   display: flex;
@@ -91,16 +81,6 @@
 }
 
 @media (min-width: 768px) {
-  .main {
-    padding: var(--spacing-lg);
-  }
-
-  .authorSection,
-  .serviceCardsContainer,
-  .featuredProjects {
-    max-width: 85%;
-  }
-
   .serviceCard {
     text-align: left;
     flex-direction: row;
@@ -108,10 +88,6 @@
 }
 
 @media (min-width: 1024px) {
-  .authorSection {
-    max-width: 60%;
-  }
-
   .serviceCardsContainer {
     max-width: 100%;
     flex-direction: row;
@@ -124,22 +100,14 @@
 }
 
 @media (min-width: 1440px) {
-  .main {
-    padding: var(--spacing-xl);
-  }
-
   .serviceCardsContainer {
     max-width: 85%;
   }
 }
 
 @media (min-width: 2560px) {
-  .main > * {
+  .serviceCardsContainer {
     max-width: 1400px;
-  }
-
-  .authorSection {
-    max-width: 30%;
   }
 }
 
