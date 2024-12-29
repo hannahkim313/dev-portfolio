@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 import projects from '../data/projectsData';
 import ProjectCard from './ProjectCard';
-import styles from '../styles/all-projects.module.css';
+import styles from '../styles/all-projects-page.module.css';
 
 const AllProjectsPage = () => {
   return (
