@@ -138,11 +138,19 @@ h3 {
 }
 
 .pageIntro {
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: clamp(
+    var(--spacing-sm),
+    var(--spacing-sm) + 1vw,
+    var(--spacing-xl)
+  );
 }
 
 .sectionHeading {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: clamp(
+    var(--spacing-xs),
+    var(--spacing-xs) + 1vw,
+    var(--spacing-lg)
+  );
 }
 
 .contentEnd {
