@@ -39,7 +39,7 @@ const Footer = () => (
           </li>
         </ul>
       </nav>
-      <nav>
+      <div>
         <h3 className="hidden">Get In Touch</h3>
         <ul className={`${styles.navList} ${styles.socials}`}>
           <li>
@@ -67,7 +67,7 @@ const Footer = () => (
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
     <p className={styles.copyright}>
       &copy; 2024 Hannah Kim. All rights reserved.
