@@ -1,13 +1,3 @@
-.main {
-  padding: var(--spacing-md);
-  background-color: var(--color-background);
-  grid-row: 2 / 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-xl);
-}
-
 .introSection {
   display: flex;
   flex-direction: column;
@@ -55,5 +45,20 @@
   font-size: var(--font-size-smaller);
 }
 
-/* TODO: style for different screen sizes */
-/* TODO: add extra spacing between title for each page??? */
+@media (min-width: 1024px) {
+  section.introSection,
+  section.skillsSection,
+  section.goalsSection,
+  .ctaContainer {
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 1440px) {
+  section.introSection,
+  section.skillsSection,
+  section.goalsSection,
+  .ctaContainer {
+    max-width: calc(1400px / 1.5);
+  }
+}
