@@ -13,9 +13,9 @@ const AboutPage = () => (
       </p>
     </section>
     <section className={styles.skillsSection}>
-      <h2>Skills and Technologies</h2>
+      <h2 className="sectionHeading">Skills and Technologies</h2>
       <article className={styles.textContainer}>
-        <h3>Front-End Development</h3>
+        <h3 className="sectionHeading">Front-End Development</h3>
         <p>
           As a front-end developer, I work with HTML, CSS, and JavaScript to
           build responsive applications. My familiarity with React allows me to
@@ -31,7 +31,7 @@ const AboutPage = () => (
         </p>
       </article>
       <article className={styles.textContainer}>
-        <h3>Back-End Development</h3>
+        <h3 className="sectionHeading">Back-End Development</h3>
         <p>
           In order to broaden my skills and gain a well-rounded understanding of
           front-end responsibilities, I've also explored back-end technologies
@@ -55,7 +55,7 @@ const AboutPage = () => (
       </article>
     </section>
     <section className={styles.goalsSection}>
-      <h2>Current Goals</h2>
+      <h2 className="sectionHeading">Current Goals</h2>
       <div className={styles.textContainer}>
         <p>
           Most of my past projects focus on these foundational tools and
