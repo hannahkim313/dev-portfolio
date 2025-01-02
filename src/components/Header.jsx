@@ -116,7 +116,7 @@ const Header = () => {
                       <a href="https://github.com/hannahkim313">GitHub</a>
                     </li>
                     <li>
-                      <a href="mailto:devhkim13@gmail.com">Email</a>
+                      <a href="mailto:devhkim.contact@gmail.com">Email</a>
                     </li>
                     <li>
                       <a href="https://www.linkedin.com/in/hannah-n-kim">

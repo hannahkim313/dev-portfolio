@@ -52,7 +52,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="mailto:devhkim13@gmail.com"
+              href="mailto:devhkim.contact@gmail.com"
               aria-label="Send an email to Hannah Kim"
             >
               <img src={mailImgSrc} alt="Mail icon" />
