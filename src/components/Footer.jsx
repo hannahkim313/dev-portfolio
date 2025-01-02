@@ -70,7 +70,7 @@ const Footer = () => (
       </div>
     </div>
     <p className={styles.copyright}>
-      &copy; 2024 Hannah Kim. All rights reserved.
+      &copy; {new Date().getFullYear()} Hannah Kim. All rights reserved.
     </p>
   </footer>
 );
