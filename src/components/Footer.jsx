@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import authorImgSrc from '../assets/portrait-transparent.png';
 import githubImgSrc from '../assets/github.svg';
-import mailImgSrc from '../assets/mail.svg';
+import mailImgSrc from '../assets/mail.png';
 import linkedInImgSrc from '../assets/linkedIn.png';
 import styles from '../styles/footer.module.css';
 
@@ -44,18 +44,18 @@ const Footer = () => (
         <ul className={`${styles.navList} ${styles.socials}`}>
           <li>
             <a
-              href="https://github.com/hannahkim313"
-              aria-label="Github profile"
-            >
-              <img src={githubImgSrc} alt="Github icon" />
-            </a>
-          </li>
-          <li>
-            <a
               href="mailto:devhkim.contact@gmail.com"
               aria-label="Send an email to Hannah Kim"
             >
               <img src={mailImgSrc} alt="Mail icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/hannahkim313"
+              aria-label="Github profile"
+            >
+              <img src={githubImgSrc} alt="Github icon" />
             </a>
           </li>
           <li>
