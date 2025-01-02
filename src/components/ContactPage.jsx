@@ -1,19 +1,39 @@
+import styles from '../styles/contact-page.module.css';
+
 const ContactPage = () => (
   <main>
-    <h1>Get In Touch</h1>
-    <p>
-      If you have any inquiries, suggestions, or just want to reach out, feel
-      free to send me a message using the form below. I'll do my best to get
-      back to you as soon as I can!
-    </p>
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeC71BF4pR6kBeAqoE4u3vzuD5V7op_o0iqFVmacnennVCqYQ/viewform?embedded=true"
-      width="640"
-      height="742"
-      title="Contact Form"
-    >
-      Loading…
-    </iframe>
+    <section className={`pageIntro ${styles.introSection}`}>
+      <h1>Get In Touch</h1>
+      <p className={styles.introSummary}>
+        Have a project in mind or just want to say hello? Send a message and
+        I'll get back to you as soon as I can.
+      </p>
+    </section>
+    <div className={`contentEnd ${styles.ctaContainer}`}>
+      <a className="cta" href="mailto:devhkim.contact@gmail.com">
+        Email Me
+      </a>
+      <ul className={styles.contactLinks}>
+        <li>
+          <a
+            className="ctaSecondary"
+            href="https://github.com/hannahkim313"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a
+            className="ctaSecondary"
+            href="https://www.linkedin.com/in/hannah-n-kim"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
   </main>
 );
 
