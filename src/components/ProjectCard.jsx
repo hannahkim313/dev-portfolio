@@ -13,7 +13,7 @@ const ProjectCard = ({ data }) => (
       </div>
     </Link>
     <div className={styles.projectDetails}>
-      <Link to={data.projectLink} state={data}>
+      <Link className="ctaSecondary" to={data.projectLink} state={data}>
         <h2 className="sectionHeading">{data.title}</h2>
       </Link>
       <p>{data.description}</p>
