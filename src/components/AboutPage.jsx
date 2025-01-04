@@ -12,9 +12,9 @@ const AboutPage = () => (
         combine aesthetics with practicality.
       </p>
     </section>
-    <section className={styles.skillsSection}>
+    <section className={`textContainer-lg ${styles.skillsSection}`}>
       <h2 className="mb-xs">Skills and Technologies</h2>
-      <article className="textContainer">
+      <article className="textContainer-sm">
         <h3 className="mb-xs">Front-End Development</h3>
         <p>
           As a front-end developer, I work with HTML, CSS, and JavaScript to
@@ -30,7 +30,7 @@ const AboutPage = () => (
           reliability, I use Jest to thoroughly test my code.
         </p>
       </article>
-      <article className="textContainer">
+      <article className="textContainer-sm">
         <h3 className="mb-xs">Back-End Development</h3>
         <p>
           In order to broaden my skills and gain a well-rounded understanding of
@@ -54,9 +54,9 @@ const AboutPage = () => (
         </p>
       </article>
     </section>
-    <section className={styles.goalsSection}>
+    <section className={`textContainer-lg ${styles.goalsSection}`}>
       <h2 className="mb-xs">Current Goals</h2>
-      <div className="textContainer">
+      <div className="textContainer-sm">
         <p>
           Most of my past projects focus on these foundational tools and
           technologies, which have given me a solid understanding of programming

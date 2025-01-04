@@ -15,20 +15,6 @@
   gap: var(--spacing-xs);
 }
 
-.skillsSection,
-.goalsSection {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
-}
-
-.textContainer {
-  margin-bottom: var(--spacing-md);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xs);
-}
-
 .ctaContainer {
   font-size: var(--font-size-subheading);
   margin-bottom: var(--spacing-xl);

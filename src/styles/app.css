@@ -136,6 +136,12 @@ h3 {
   font-size: var(--font-size-h3);
 }
 
+code {
+  padding: var(--spacing-xs);
+  background-color: var(--color-background-dark);
+  border-radius: var(--border-radius-xs);
+}
+
 #root,
 #__next {
   isolation: isolate;
@@ -163,11 +169,17 @@ h3 {
   );
 }
 
-.textContainer {
+.textContainer-sm {
   margin-bottom: var(--spacing-md);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
+}
+
+.textContainer-lg {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
 }
 
 .contentEnd {

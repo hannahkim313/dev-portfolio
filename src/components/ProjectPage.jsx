@@ -13,7 +13,7 @@ const ProjectPage = () => {
       <main>
         <section className={`mb-sm ${styles.introSection}`}>
           <h1>{state.title}</h1>
-          <div className="textContainer">
+          <div className="textContainer-sm">
             <p>Date Completed: {state.date}</p>
             <br />
             <p>{state.description}</p>
@@ -46,7 +46,7 @@ const ProjectPage = () => {
               View on GitHub
             </a>
           </div>
-          <div className={`mb-xs ${styles.techStackContainer}`}>
+          <div className="mb-xs textContainer-lg">
             <h3 className={`mb-xs ${styles.techStackTitle}`}>
               Technology Stack
             </h3>
@@ -61,7 +61,7 @@ const ProjectPage = () => {
         </section>
         <section className={styles.keyFeaturesSection}>
           <h2 className="mb-xs">Key Features</h2>
-          <ul className="textContainer">
+          <ul className="textContainer-sm">
             {state.features.map((feature) => (
               <Fragment key={uuidv4()}>
                 <li className={styles.keyFeatureItem}>{feature}</li>
