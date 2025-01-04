@@ -1,30 +1,12 @@
 import apiImgSrc from '../assets/api-main.png';
-import apiCarousel1 from '../assets/api-carousel-1.png';
-import apiCarousel2 from '../assets/api-carousel-2.png';
-import apiCarousel3 from '../assets/api-carousel-3.png';
-import apiCarousel4 from '../assets/api-carousel-4.png';
-import apiCarousel5 from '../assets/api-carousel-5.png';
 import inventoryMateImgSrc from '../assets/inventory-mate-main.png';
-import inventoryMateCarousel1 from '../assets/inventory-mate-carousel-1.png';
-import inventoryMateCarousel2 from '../assets/inventory-mate-carousel-2.png';
-import inventoryMateCarousel3 from '../assets/inventory-mate-carousel-3.png';
-import inventoryMateCarousel4 from '../assets/inventory-mate-carousel-4.png';
-import inventoryMateCarousel5 from '../assets/inventory-mate-carousel-5.png';
 import urbanThreadImgSrc from '../assets/urban-thread-main.png';
-import urbanThreadCarousel1 from '../assets/urban-thread-carousel-1.png';
-import urbanThreadCarousel2 from '../assets/urban-thread-carousel-2.png';
-import urbanThreadCarousel3 from '../assets/urban-thread-carousel-3.png';
 import memoryCardImgSrc from '../assets/memory-card-main.png';
-import memoryCardCarousel1 from '../assets/memory-card-carousel-1.png';
-import memoryCardCarousel2 from '../assets/memory-card-carousel-2.png';
-import memoryCardCarousel3 from '../assets/memory-card-carousel-3.png';
 import battleshipImgSrc from '../assets/battleship-main.png';
-import battleshipCarousel1 from '../assets/battleship-carousel-1.png';
-import battleshipCarousel2 from '../assets/battleship-carousel-2.png';
 
 const projects = [
   {
-    title: 'My Personal Blog API',
+    title: 'Personal Blog API',
     date: 'Nov 2024',
     description: `A full-stack blog platform built with Prisma, PostgreSQL,
       and Node/Express.js. This project features role-based authentication,
@@ -33,8 +15,7 @@ const projects = [
       edit, and manage content dynamically.`,
     mainImg: {
       src: apiImgSrc,
-      alt: `Screenshot of the main configuration file displaying the API's 
-        overall structure.`,
+      alt: '',
     },
     features: [
       `User authentication and authorization are handled through login and
@@ -59,32 +40,6 @@ const projects = [
       'Render',
       'Neon',
     ],
-    carousel: {
-      1: {
-        src: apiCarousel1,
-        alt: `Screenshot of the authentication and authorization route
-          structure.`,
-      },
-      2: {
-        src: apiCarousel2,
-        alt: `Screenshot of the user verification process using
-          jsonwebtoken.`,
-      },
-      3: {
-        src: apiCarousel3,
-        alt: `Screenshot of the user authentication configuration using
-          Passport.js and jsonwebtoken.`,
-      },
-      4: {
-        src: apiCarousel4,
-        alt: 'Screenshot of the validation and sanitization process.',
-      },
-      5: {
-        src: apiCarousel5,
-        alt: `Screenshot of the authentication and authorization controller
-          functions that handle requests.`,
-      },
-    },
     liveLink: null,
     sourceCode: 'https://github.com/hannahkim313/blog-api',
     projectLink: '/projects/blog-api',
@@ -100,9 +55,7 @@ const projects = [
       structured interface.`,
     mainImg: {
       src: inventoryMateImgSrc,
-      alt: `Screenshot of the home page of InventoryMate featuring a
-        navigational sidebar and an overview of the application in the main
-        content.`,
+      alt: '',
     },
     features: [
       `Inventory data management uses MongoDB with Mongoose to handle
@@ -121,28 +74,6 @@ const projects = [
       handling for consistent management,`,
     ],
     techStack: ['Node.js and Express', 'MongoDB', 'Mongoose', 'Glitch'],
-    carousel: {
-      1: {
-        src: inventoryMateCarousel1,
-        alt: 'Screenshot of all items in the application.',
-      },
-      2: {
-        src: inventoryMateCarousel2,
-        alt: 'Screenshot of a specific item detail page.',
-      },
-      3: {
-        src: inventoryMateCarousel3,
-        alt: 'Screenshot of the form to update an item.',
-      },
-      4: {
-        src: inventoryMateCarousel4,
-        alt: 'Screenshot of the painting category with all its items listed.',
-      },
-      5: {
-        src: inventoryMateCarousel5,
-        alt: 'Screenshot of the form to update a category.',
-      },
-    },
     liveLink: 'https://scented-rowan-star.glitch.me/catalog',
     sourceCode: 'https://github.com/hannahkim313/inventory-app',
     projectLink: '/projects/inventory-management-application',
@@ -158,9 +89,7 @@ const projects = [
       e-commerce brands.`,
     mainImg: {
       src: urbanThreadImgSrc,
-      alt: `Screenshot of the home page of Urban Thread featuring a
-        navigation header, promotional banner, and 3 images of models
-        representing the (fake) brand.`,
+      alt: '',
     },
     features: [
       `Product data is dynamically fetched from the FakeStore API,
@@ -171,7 +100,7 @@ const projects = [
       and the shopping cart.`,
       `State management ensures that the shopping cart and product
       selections persist as users explore the store.`,
-      `Components are styles with CSS Modules to enable modular and scoped
+      `Components are styled with CSS Modules to enable modular and scoped
       styling for a cleaner codebase.`,
       `PropTypes are used for type-checking component props, helping to
       prevent runtime errors.`,
@@ -186,25 +115,6 @@ const projects = [
       'CSS Modules',
       'PropTypes',
     ],
-    carousel: {
-      1: {
-        src: urbanThreadCarousel1,
-        alt: "Screenshot of all products in the men's clothing category",
-      },
-      2: {
-        src: urbanThreadCarousel2,
-        alt: `Screenshot of a product detail page, featuring the product
-          title, average 5-star rating, total number of reviews, price,
-          product description, and options to add the product to the bag
-          or add to the favorites.`,
-      },
-      3: {
-        src: urbanThreadCarousel3,
-        alt: `Screenshot of the shopping cart, displaying all products
-          in the cart with their quantity and price as well as the order
-          summary with the order total.`,
-      },
-    },
     liveLink: 'https://shopping-cart-c0j.pages.dev/',
     sourceCode: 'https://github.com/hannahkim313/shopping-cart',
     projectLink: '/projects/mock-e-commerce-store',
@@ -220,9 +130,7 @@ const projects = [
       players attempt to match pairs of cards.`,
     mainImg: {
       src: memoryCardImgSrc,
-      alt: `Screenshot of the home page of the memory card game featuring a
-        scoreboard at the top and 8 cards with images of different Animal
-        Crossing characters laid out below it.`,
+      alt: '',
     },
     features: [
       `Card images are dynamically fetched from the Nintendo Amiibo API,
@@ -234,20 +142,6 @@ const projects = [
       round, offering a challenge every time the game is played.`,
     ],
     techStack: ['React', 'JavaScript', 'npm'],
-    carousel: {
-      1: {
-        src: memoryCardCarousel1,
-        alt: 'Screenshot of a successful round.',
-      },
-      2: {
-        src: memoryCardCarousel2,
-        alt: 'Screenshot of the game when a player loses.',
-      },
-      3: {
-        src: memoryCardCarousel3,
-        alt: 'Screenshot of the game when a player wins.',
-      },
-    },
     liveLink: 'https://memory-card-ehz.pages.dev/',
     sourceCode: 'https://github.com/hannahkim313/memory-card',
     projectLink: '/projects/memory-card-game',
@@ -262,8 +156,7 @@ const projects = [
       player-vs-AI functionality for an engaging user experience.`,
     mainImg: {
       src: battleshipImgSrc,
-      alt: `Screenshot of the gameplay featuring the player and opponent's
-        game boards with hits and misses.`,
+      alt: '',
     },
     features: [
       `Pure JavaScript application created to strengthen programming
@@ -288,18 +181,6 @@ const projects = [
       'Webpack',
       'HTML/CSS',
     ],
-    carousel: {
-      1: {
-        src: battleshipCarousel1,
-        alt: 'Screenshot of the ship placement phase.',
-      },
-      2: {
-        src: battleshipCarousel2,
-        alt: `Screenshot of the gameplay between the player and the
-          opponent, displaying both gameboards with hits, misses, and ships
-          displayed on each board.`,
-      },
-    },
     liveLink: 'https://hannahkim313.github.io/battleship/',
     sourceCode: 'https://github.com/hannahkim313/battleship',
     projectLink: '/projects/battleship',
