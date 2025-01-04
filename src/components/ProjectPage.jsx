@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
+import { Fragment } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import styles from '../styles/project-page.module.css';
 
 const ProjectPage = () => {
   const location = useLocation();
@@ -10,53 +10,77 @@ const ProjectPage = () => {
 
   return (
     <>
-      <aside>
-        <h2>Project Details</h2>
-        {state.liveLink && (
-          <a href={state.liveLink} target="_blank">
-            View Demo
-          </a>
-        )}
-        <a href={state.sourceCode} target="_blank">
-          View on GitHub
-        </a>
-        <p>Technology Stack:</p>
-        <ul>
-          {state.techStack.map((tech) => (
-            <li key={uuidv4()}>{tech}</li>
-          ))}
-        </ul>
-      </aside>
       <main>
-        <h1>{state.title}</h1>
-        <p>Date Completed: {state.date}</p>
-        <p>{state.description}</p>
-        <img src={state.mainImg.src} alt={state.mainImg.alt} />
-        <h2>Key Features</h2>
-        <ul>
-          {state.features.map((feature) => (
-            <li key={uuidv4()}>{feature}</li>
-          ))}
-        </ul>
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 8000 }}
-          loop
-        >
-          {Object.entries(state.carousel).map(([key, value]) => (
-            <SwiperSlide key={key}>
-              <img src={value.src} alt={value.alt} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <p>
-          If you're interested in collaborating or want to learn more about my
-          work, feel free to reach out!
-        </p>
-        <Link to="/contact">Get In Touch</Link>
+        <section className={`mb-sm ${styles.introSection}`}>
+          <h1>{state.title}</h1>
+          <div className="textContainer">
+            <p>Date Completed: {state.date}</p>
+            <br />
+            <p>{state.description}</p>
+          </div>
+          <div className={styles.projectThumbnailContainer}>
+            <img
+              className={styles.projectThumbnail}
+              src={state.mainImg.src}
+              alt={state.mainImg.alt}
+            />
+          </div>
+        </section>
+        <section className={styles.projectDetailsSection}>
+          <h2 className="hidden mb-xs">Project Details</h2>
+          <div className={`mb-xs ${styles.projectCtaContainer}`}>
+            {state.liveLink && (
+              <a
+                className={`cta ${styles.ctaCustom}`}
+                href={state.liveLink}
+                target="_blank"
+              >
+                View Demo
+              </a>
+            )}
+            <a
+              className={`cta ${styles.ctaCustom}`}
+              href={state.sourceCode}
+              target="_blank"
+            >
+              View on GitHub
+            </a>
+          </div>
+          <div className={`mb-xs ${styles.techStackContainer}`}>
+            <h3 className={`mb-xs ${styles.techStackTitle}`}>
+              Technology Stack
+            </h3>
+            <ul className={styles.techStackList}>
+              {state.techStack.map((tech) => (
+                <li className={styles.techStackItem} key={uuidv4()}>
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+        <section className={styles.keyFeaturesSection}>
+          <h2 className="mb-xs">Key Features</h2>
+          <ul className="textContainer">
+            {state.features.map((feature) => (
+              <Fragment key={uuidv4()}>
+                <li className={styles.keyFeatureItem}>{feature}</li>
+                <br />
+              </Fragment>
+            ))}
+          </ul>
+        </section>
+        <div className={`contentEnd ${styles.ctaContainer}`}>
+          <Link className="cta" to="/contact">
+            Get In Touch
+          </Link>
+          <Link
+            className={`ctaSecondary ${styles.ctaSecondaryCustom}`}
+            to="/projects"
+          >
+            See All Projects
+          </Link>
+        </div>
       </main>
     </>
   );

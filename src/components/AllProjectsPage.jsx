@@ -7,7 +7,7 @@ import styles from '../styles/all-projects-page.module.css';
 const AllProjectsPage = () => {
   return (
     <main>
-      <section className={`pageIntro ${styles.introSection}`}>
+      <section className={`mb-sm ${styles.introSection}`}>
         <h1>Projects I've Created</h1>
         <p className={styles.introSummary}>
           With a focus on design and front-end development while exploring

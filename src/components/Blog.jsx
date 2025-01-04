@@ -36,7 +36,7 @@ const Blog = () => {
 
   return (
     <main>
-      <section className={`pageIntro ${styles.introSection}`}>
+      <section className={`mb-sm ${styles.introSection}`}>
         <h1>Personal Developer Blog</h1>
         <p>
           Insights on web development, current and future projects, and my
@@ -44,7 +44,7 @@ const Blog = () => {
         </p>
       </section>
       <section className={styles.articlesSection}>
-        <h2 className={`sectionHeading ${styles.articlesHeading}`}>Articles</h2>
+        <h2 className={`mb-xs ${styles.articlesHeading}`}>Articles</h2>
         {loading && <p>Loading articles...</p>}
         {error && <p>{error}</p>}
         {data && data.articles.length === 0 && (
@@ -68,7 +68,7 @@ const Blog = () => {
                   to={`/blog/articles/${article.url}`}
                   state={{ id: article.id }}
                 >
-                  <h3 className="sectionHeading">{article.title}</h3>
+                  <h3 className="mb-xs">{article.title}</h3>
                 </Link>
                 <p>{article.description}</p>
               </article>

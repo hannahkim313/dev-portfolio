@@ -3,7 +3,7 @@ import styles from '../styles/about-page.module.css';
 
 const AboutPage = () => (
   <main className={styles.main}>
-    <section className={`pageIntro ${styles.introSection}`}>
+    <section className={`mb-sm ${styles.introSection}`}>
       <h1 className={styles.introHeading}>About Hannah Kim</h1>
       <p>
         I'm a self-taught software engineer with a background in illustration.
@@ -13,9 +13,9 @@ const AboutPage = () => (
       </p>
     </section>
     <section className={styles.skillsSection}>
-      <h2 className="sectionHeading">Skills and Technologies</h2>
-      <article className={styles.textContainer}>
-        <h3 className="sectionHeading">Front-End Development</h3>
+      <h2 className="mb-xs">Skills and Technologies</h2>
+      <article className="textContainer">
+        <h3 className="mb-xs">Front-End Development</h3>
         <p>
           As a front-end developer, I work with HTML, CSS, and JavaScript to
           build responsive applications. My familiarity with React allows me to
@@ -30,8 +30,8 @@ const AboutPage = () => (
           reliability, I use Jest to thoroughly test my code.
         </p>
       </article>
-      <article className={styles.textContainer}>
-        <h3 className="sectionHeading">Back-End Development</h3>
+      <article className="textContainer">
+        <h3 className="mb-xs">Back-End Development</h3>
         <p>
           In order to broaden my skills and gain a well-rounded understanding of
           front-end responsibilities, I've also explored back-end technologies
@@ -55,8 +55,8 @@ const AboutPage = () => (
       </article>
     </section>
     <section className={styles.goalsSection}>
-      <h2 className="sectionHeading">Current Goals</h2>
-      <div className={styles.textContainer}>
+      <h2 className="mb-xs">Current Goals</h2>
+      <div className="textContainer">
         <p>
           Most of my past projects focus on these foundational tools and
           technologies, which have given me a solid understanding of programming

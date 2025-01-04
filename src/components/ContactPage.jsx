@@ -2,7 +2,7 @@ import styles from '../styles/contact-page.module.css';
 
 const ContactPage = () => (
   <main>
-    <section className={`pageIntro ${styles.introSection}`}>
+    <section className={`mb-sm ${styles.introSection}`}>
       <h1>Get In Touch</h1>
       <p className={styles.introSummary}>
         Have a project in mind or just want to say hello? Send a message and

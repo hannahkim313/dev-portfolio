@@ -40,7 +40,7 @@ const HomePage = () => {
 
   const mainContent = (
     <main>
-      <section className={`pageIntro ${styles.authorSection}`}>
+      <section className={`mb-sm ${styles.authorSection}`}>
         <img
           className={styles.authorImg}
           src={authorImgSrc}
@@ -72,7 +72,7 @@ const HomePage = () => {
       </section>
       <hr className="divider" />
       <section className={styles.featuredProjects}>
-        <h2 className={`sectionHeading ${styles.featuredProjectsTitle}`}>
+        <h2 className={`mb-xs ${styles.featuredProjectsTitle}`}>
           Featured Projects
         </h2>
         <div className={styles.projectsContainer}>
