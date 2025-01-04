@@ -43,7 +43,7 @@ const AboutPage = () => (
           Although my primary focus is front-end development, building and
           integrating my own{' '}
           <Link
-            className={`ctaSecondary ${styles.ctaSecondaryBold}`}
+            className="ctaSecondary ctaSecondaryBold"
             to="/projects/blog-api"
           >
             blog API

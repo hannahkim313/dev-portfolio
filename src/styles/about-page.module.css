@@ -38,10 +38,6 @@
   gap: var(--spacing-sm);
 }
 
-.ctaSecondaryBold {
-  font-weight: bold;
-}
-
 .ctaSecondarySmaller {
   font-size: var(--font-size-smaller);
 }
