@@ -6,7 +6,7 @@
 }
 
 .introSummary {
-  font-size: var(--font-size-subheading);
+  font-size: var(--font-size-h4);
 }
 
 .projectsContainer {
@@ -17,7 +17,7 @@
 
 .githubCta {
   text-align: center;
-  font-size: var(--font-size-subheading);
+  font-size: var(--font-size-h4);
   font-weight: bold;
 }
 

@@ -16,7 +16,7 @@
 }
 
 .ctaContainer {
-  font-size: var(--font-size-subheading);
+  font-size: var(--font-size-h4);
   margin-bottom: var(--spacing-xl);
   display: flex;
   flex-direction: column;

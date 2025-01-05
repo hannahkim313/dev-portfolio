@@ -21,7 +21,7 @@
 }
 
 .authorSummary {
-  font-size: var(--font-size-subheading);
+  font-size: var(--font-size-h4);
 }
 
 .serviceCardsContainer {
@@ -69,7 +69,7 @@
 }
 
 .ctaContainer {
-  font-size: var(--font-size-subheading);
+  font-size: var(--font-size-h4);
   display: flex;
   flex-direction: column;
   align-items: center;

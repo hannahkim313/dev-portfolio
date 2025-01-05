@@ -18,7 +18,7 @@
   --font-size-h3: calc(
     var(--font-size-base) * var(--font-scale) * var(--font-scale)
   );
-  --font-size-subheading: calc(var(--font-size-base) * var(--font-scale));
+  --font-size-h4: calc(var(--font-size-base) * var(--font-scale));
   --color-text: #382415;
   --color-background: #fff5e2;
   --color-background-dark: #f1e3c7;
@@ -136,10 +136,29 @@ h3 {
   font-size: var(--font-size-h3);
 }
 
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: var(--spacing-md);
+  background-color: var(--color-background-dark);
+  border-radius: var(--border-radius-xs);
+}
+
 code {
   padding: var(--spacing-xs);
   background-color: var(--color-background-dark);
   border-radius: var(--border-radius-xs);
+}
+
+code.codeBlock {
+  display: block;
+  padding: 0;
+  background: none;
+  border-radius: 0;
 }
 
 #root,
