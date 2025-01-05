@@ -1,0 +1,40 @@
+.articleContainer {
+  margin-top: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.introSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.introHeading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.articleContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 1024px) {
+  .articleContainer {
+    max-width: 75%;
+  }
+
+  section.introSection {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .articleContainer {
+    max-width: calc(1400px / 1.5);
+  }
+}

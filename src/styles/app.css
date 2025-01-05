@@ -266,6 +266,10 @@ code.codeBlock {
     --font-size-base: 1.125rem;
   }
 
+  pre {
+    padding: var(--spacing-xl);
+  }
+
   main {
     padding: var(--spacing-lg);
   }
