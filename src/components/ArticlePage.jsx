@@ -51,14 +51,12 @@ const ArticlePage = () => {
             </div>
             <p>{data.article.description}</p>
           </section>
-          {
-            <div
-              className={styles.articleContentContainer}
-              dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(data.article.content),
-              }}
-            ></div>
-          }
+          <div
+            className={styles.articleContentContainer}
+            dangerouslySetInnerHTML={{
+              __html: DOMPurify.sanitize(data.article.content),
+            }}
+          />
         </article>
       )}
     </main>
