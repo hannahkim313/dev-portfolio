@@ -5,10 +5,11 @@ import redFlowerImgSrc from '../assets/flower-red.png';
 import whiteFlowerImgSrc from '../assets/flower-white.png';
 import authorImgSrc from '../assets/portrait-transparent.png';
 import projects from '../data/projectsData';
+import Layout from './Layout';
 import Header from './Header';
 import Footer from './Footer';
-import styles from '../styles/home-page.module.css';
 import ProjectCard from './ProjectCard';
+import styles from '../styles/home-page.module.css';
 
 const HomePage = () => {
   const location = useLocation();
@@ -39,7 +40,7 @@ const HomePage = () => {
   ];
 
   const mainContent = (
-    <main>
+    <Layout>
       <section className={`mb-sm ${styles.authorSection}`}>
         <img
           className={styles.authorImg}
@@ -94,7 +95,7 @@ const HomePage = () => {
           See All Projects
         </Link>
       </div>
-    </main>
+    </Layout>
   );
 
   return (

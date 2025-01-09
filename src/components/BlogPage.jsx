@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useFetchAPI from '../hooks/useFetchAPI';
 import formatDate from '../utils/formatDate';
+import Layout from './Layout';
 import styles from '../styles/blog.module.css';
 
 const BlogPage = () => {
@@ -35,7 +36,7 @@ const BlogPage = () => {
   }, [fetchError]);
 
   return (
-    <main>
+    <Layout>
       <section className={`mb-sm ${styles.introSection}`}>
         <h1>Personal Developer Blog</h1>
         <p>
@@ -75,7 +76,7 @@ const BlogPage = () => {
             );
           })}
       </section>
-    </main>
+    </Layout>
   );
 };
 

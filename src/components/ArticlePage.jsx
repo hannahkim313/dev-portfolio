@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import useFetchAPI from '../hooks/useFetchAPI';
 import formatDate from '../utils/formatDate';
+import Layout from './Layout';
 import styles from '../styles/article-page.module.css';
 
 const ArticlePage = () => {
@@ -39,7 +40,7 @@ const ArticlePage = () => {
   }, [fetchError]);
 
   return (
-    <main>
+    <Layout>
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {data && (
@@ -59,7 +60,7 @@ const ArticlePage = () => {
           />
         </article>
       )}
-    </main>
+    </Layout>
   );
 };
 

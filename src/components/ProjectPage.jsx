@@ -1,37 +1,41 @@
 import { v4 as uuidv4 } from 'uuid';
 import { Fragment } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import projects from '../data/projectsData';
+import Layout from './Layout';
 import styles from '../styles/project-page.module.css';
 
 const ProjectPage = () => {
-  const location = useLocation();
+  const { projectTitle } = useParams();
 
-  const state = location.state;
+  const project = projects.find(
+    (data) => data.projectLink === `/projects/${projectTitle}`
+  );
 
   return (
-    <main>
+    <Layout>
       <section className={`mb-sm ${styles.introSection}`}>
-        <h1>{state.title}</h1>
+        <h1>{project.title}</h1>
         <div className="textContainer-sm">
-          <p>Date Completed: {state.date}</p>
+          <p>Date Completed: {project.date}</p>
           <br />
-          <p>{state.description}</p>
+          <p>{project.description}</p>
         </div>
         <div className={styles.projectThumbnailContainer}>
           <img
             className={styles.projectThumbnail}
-            src={state.mainImg.src}
-            alt={state.mainImg.alt}
+            src={project.mainImg.src}
+            alt={project.mainImg.alt}
           />
         </div>
       </section>
       <section className={styles.projectDetailsSection}>
         <h2 className="hidden mb-xs">Project Details</h2>
         <div className={`mb-xs ${styles.projectCtaContainer}`}>
-          {state.liveLink && (
+          {project.liveLink && (
             <a
               className={`cta ${styles.ctaCustom}`}
-              href={state.liveLink}
+              href={project.liveLink}
               target="_blank"
             >
               View Demo
@@ -39,7 +43,7 @@ const ProjectPage = () => {
           )}
           <a
             className={`cta ${styles.ctaCustom}`}
-            href={state.sourceCode}
+            href={project.sourceCode}
             target="_blank"
           >
             View on GitHub
@@ -48,7 +52,7 @@ const ProjectPage = () => {
         <div className="mb-xs textContainer-lg">
           <h3 className={`mb-xs ${styles.techStackTitle}`}>Technology Stack</h3>
           <ul className={styles.techStackList}>
-            {state.techStack.map((tech) => (
+            {project.techStack.map((tech) => (
               <li className={styles.techStackItem} key={uuidv4()}>
                 {tech}
               </li>
@@ -59,7 +63,7 @@ const ProjectPage = () => {
       <section className={styles.keyFeaturesSection}>
         <h2 className="mb-xs">Key Features</h2>
         <ul className="textContainer-sm">
-          {state.features.map((feature) => (
+          {project.features.map((feature) => (
             <Fragment key={uuidv4()}>
               <li className={styles.keyFeatureItem}>{feature}</li>
               <br />
@@ -78,7 +82,7 @@ const ProjectPage = () => {
           See All Projects
         </Link>
       </div>
-    </main>
+    </Layout>
   );
 };
 

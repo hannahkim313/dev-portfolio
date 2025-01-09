@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
+import Layout from './Layout';
 import styles from '../styles/about-page.module.css';
 
 const AboutPage = () => (
-  <main>
+  <Layout>
     <section className={`mb-sm ${styles.introSection}`}>
       <h1 className={styles.introHeading}>About Hannah Kim</h1>
       <p>
@@ -89,7 +90,7 @@ const AboutPage = () => (
         See All Projects
       </Link>
     </div>
-  </main>
+  </Layout>
 );
 
 export default AboutPage;

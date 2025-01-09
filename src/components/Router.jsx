@@ -3,7 +3,7 @@ import HomePage from './HomePage';
 import ErrorPage from './ErrorPage';
 import AllProjectsPage from './AllProjectsPage';
 import ProjectPage from './ProjectPage';
-import Blog from './Blog';
+import BlogPage from './BlogPage';
 import ArticlePage from './ArticlePage';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
@@ -25,7 +25,7 @@ const Router = () => {
         },
         {
           path: 'blog',
-          element: <Blog />,
+          element: <BlogPage />,
         },
         {
           path: 'blog/articles/:articleTitle',
