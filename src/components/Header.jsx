@@ -20,12 +20,17 @@ const Header = () => {
   return (
     <header>
       <div className={styles.headerContentContainer}>
-        <h2 className={styles.authorDetails}>
-          <span>Hannah Kim</span>
-          <span className={styles.authorTitle}>
-            Creative Front-End Developer
-          </span>
-        </h2>
+        <div className={styles.headerLeftContainer}>
+          <h2 className={styles.authorDetails}>
+            <span>Hannah Kim</span>
+            <span className={styles.authorTitle}>
+              Creative Front-End Developer
+            </span>
+          </h2>
+          <a className={`cta skip ${styles.ctaCustom}`} href="#content">
+            Skip to Main Content
+          </a>
+        </div>
         {isLargeScreen ? (
           <nav>
             <h3 className="hidden">Main Navigation</h3>

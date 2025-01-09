@@ -11,6 +11,12 @@ header {
   gap: var(--spacing-md);
 }
 
+.headerLeftContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
 .authorDetails {
   display: flex;
   flex-direction: column;
@@ -58,6 +64,10 @@ header {
   height: 1px;
   border: none;
   background-color: var(--color-neutral);
+}
+
+.ctaCustom {
+  font-size: var(--font-size-smaller);
 }
 
 @media (min-width: 768px) {

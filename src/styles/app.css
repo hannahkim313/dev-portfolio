@@ -238,9 +238,20 @@ code.codeBlock {
   background-color: var(--color-primary-light);
 }
 
-.hidden {
+.hidden,
+.skip {
   position: absolute;
-  left: -999999999px;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus-visible {
+  position: static;
+  width: auto;
+  height: auto;
 }
 
 :focus-visible {
