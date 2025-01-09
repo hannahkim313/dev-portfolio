@@ -4,7 +4,7 @@ import useFetchAPI from '../hooks/useFetchAPI';
 import formatDate from '../utils/formatDate';
 import styles from '../styles/blog.module.css';
 
-const Blog = () => {
+const BlogPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [shouldFetch, setShouldFetch] = useState(true);
@@ -79,4 +79,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogPage;
