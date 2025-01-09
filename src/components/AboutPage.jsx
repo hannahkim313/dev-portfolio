@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from '../styles/about-page.module.css';
 
 const AboutPage = () => (
-  <main className={styles.main}>
+  <main>
     <section className={`mb-sm ${styles.introSection}`}>
       <h1 className={styles.introHeading}>About Hannah Kim</h1>
       <p>
