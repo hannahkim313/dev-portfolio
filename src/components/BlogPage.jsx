@@ -23,12 +23,12 @@ const BlogPage = () => {
       setLoading(false);
       setError(null);
       setShouldFetch(false);
+    }
 
-      if (fetchError) {
-        setLoading(false);
-        setError(fetchError);
-        setShouldFetch(false);
-      }
+    if (fetchError) {
+      setLoading(false);
+      setError(fetchError);
+      setShouldFetch(false);
     }
   }, [data, fetchError]);
 
