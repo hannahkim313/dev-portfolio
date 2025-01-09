@@ -1,8 +1,7 @@
-import Layout from './Layout';
 import styles from '../styles/contact-page.module.css';
 
 const ContactPage = () => (
-  <Layout>
+  <>
     <section className={`mb-sm ${styles.introSection}`}>
       <h1>Get In Touch</h1>
       <p className={styles.introSummary}>
@@ -35,7 +34,7 @@ const ContactPage = () => (
         </li>
       </ul>
     </div>
-  </Layout>
+  </>
 );
 
 export default ContactPage;

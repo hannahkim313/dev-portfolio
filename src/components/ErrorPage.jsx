@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 import errorImgSrc from '../assets/error.png';
-import Layout from './Layout';
 import styles from '../styles/error-page.module.css';
 
 const ErrorPage = ({ errorMessage }) => (
-  <Layout>
+  <>
     <section className={styles.contentContainer}>
       <h1 className="">Something Went Wrong!</h1>
       <img
@@ -17,7 +16,7 @@ const ErrorPage = ({ errorMessage }) => (
         Back to Home
       </Link>
     </section>
-  </Layout>
+  </>
 );
 
 export default ErrorPage;

@@ -2,7 +2,6 @@ import { v4 as uuidv4 } from 'uuid';
 import { Fragment } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import projects from '../data/projectsData';
-import Layout from './Layout';
 import styles from '../styles/project-page.module.css';
 
 const ProjectPage = () => {
@@ -13,7 +12,7 @@ const ProjectPage = () => {
   );
 
   return (
-    <Layout>
+    <>
       <section className={`mb-sm ${styles.introSection}`}>
         <h1>{project.title}</h1>
         <div className="textContainer-sm">
@@ -82,7 +81,7 @@ const ProjectPage = () => {
           See All Projects
         </Link>
       </div>
-    </Layout>
+    </>
   );
 };
 

@@ -1,13 +1,10 @@
 import { v4 as uuidv4 } from 'uuid';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import purpleFlowerImgSrc from '../assets/flower-purple.png';
 import redFlowerImgSrc from '../assets/flower-red.png';
 import whiteFlowerImgSrc from '../assets/flower-white.png';
 import authorImgSrc from '../assets/portrait-transparent.png';
 import projects from '../data/projectsData';
-import Layout from './Layout';
-import Header from './Header';
-import Footer from './Footer';
 import ProjectCard from './ProjectCard';
 import styles from '../styles/home-page.module.css';
 
@@ -39,8 +36,8 @@ const HomePage = () => {
     },
   ];
 
-  const mainContent = (
-    <Layout>
+  return (
+    <>
       <section className={`mb-sm ${styles.authorSection}`}>
         <img
           className={styles.authorImg}
@@ -95,15 +92,7 @@ const HomePage = () => {
           See All Projects
         </Link>
       </div>
-    </Layout>
-  );
-
-  return (
-    <div className="mainContentContainer">
-      <Header />
-      {isHome ? mainContent : <Outlet />}
-      <Footer />
-    </div>
+    </>
   );
 };
 

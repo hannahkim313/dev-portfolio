@@ -1,12 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 import projects from '../data/projectsData';
-import Layout from './Layout';
 import ProjectCard from './ProjectCard';
 import styles from '../styles/all-projects-page.module.css';
 
 const AllProjectsPage = () => (
-  <Layout>
+  <>
     <section className={`mb-sm ${styles.introSection}`}>
       <h1>Projects I've Created</h1>
       <p className={styles.introSummary}>
@@ -32,7 +31,7 @@ const AllProjectsPage = () => (
         Let's Connect
       </Link>
     </div>
-  </Layout>
+  </>
 );
 
 export default AllProjectsPage;
