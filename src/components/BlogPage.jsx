@@ -23,16 +23,14 @@ const BlogPage = () => {
       setLoading(false);
       setError(null);
       setShouldFetch(false);
-    }
-  }, [data]);
 
-  useEffect(() => {
-    if (fetchError) {
-      setLoading(false);
-      setError(fetchError);
-      setShouldFetch(false);
+      if (fetchError) {
+        setLoading(false);
+        setError(fetchError);
+        setShouldFetch(false);
+      }
     }
-  }, [fetchError]);
+  }, [data, fetchError]);
 
   return (
     <>
