@@ -47,7 +47,7 @@ const BlogPage = () => {
         <h2 className={`mb-xs ${styles.articlesHeading}`}>Articles</h2>
         {loading && <p>Loading articles...</p>}
         {error && <p>{error}</p>}
-        {data && data.articles.length === 0 && (
+        {data && Array.isArray(data.articles) && data.articles.length === 0 && (
           <div className={styles.noArticlesContainer}>
             <p className={styles.noArticlesHeading}>No Articles Yet!</p>
             <p>
@@ -58,6 +58,7 @@ const BlogPage = () => {
           </div>
         )}
         {data &&
+          Array.isArray(data.articles) &&
           data.articles.length > 0 &&
           data.articles.map((article) => {
             return (
