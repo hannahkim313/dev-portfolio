@@ -13,7 +13,7 @@ const ArticlePage = () => {
   const location = useLocation();
   const { id } = location.state || {};
 
-  const url = `/api/articles/${id}`;
+  const url = `${import.meta.env.VITE_API_URL}/api/articles/${id}`;
 
   const { data, fetchError } = useFetchAPI(shouldFetch ? url : null, 'GET');
 

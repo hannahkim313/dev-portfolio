@@ -9,7 +9,7 @@ const BlogPage = () => {
   const [error, setError] = useState(null);
   const [shouldFetch, setShouldFetch] = useState(true);
 
-  const url = '/api/articles';
+  const url = `${import.meta.env.VITE_API_URL}/api/articles`;
 
   const { data, fetchError } = useFetchAPI(shouldFetch ? url : null, 'GET');
 
