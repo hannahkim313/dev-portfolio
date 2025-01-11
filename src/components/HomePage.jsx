@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import purpleFlowerImgSrc from '../assets/flower-purple.png';
 import redFlowerImgSrc from '../assets/flower-red.png';
 import whiteFlowerImgSrc from '../assets/flower-white.png';
@@ -9,9 +9,6 @@ import ProjectCard from './ProjectCard';
 import styles from '../styles/home-page.module.css';
 
 const HomePage = () => {
-  const location = useLocation();
-
-  const isHome = location.pathname === '/';
   const services = [
     {
       imgSrc: purpleFlowerImgSrc,
