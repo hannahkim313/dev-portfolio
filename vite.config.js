@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    sourcemap: import.meta.env.VITE_NODE_ENV === 'development',
+    sourcemap: import.meta.env.VITE_API_NODE_ENV === 'development',
   },
 });
