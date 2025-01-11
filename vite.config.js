@@ -10,4 +10,7 @@ export default defineConfig({
   build: {
     sourcemap: process.env.VITE_API_NODE_ENV === 'development',
   },
+  optimizeDeps: {
+    include: ['react-helmet-async'],
+  },
 });

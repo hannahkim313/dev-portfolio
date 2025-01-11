@@ -1,8 +1,43 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import styles from '../styles/about-page.module.css';
 
 const AboutPage = () => (
   <>
+    <Helmet>
+      <title>About | Hannah Kim - Front-End Developer</title>
+      <meta
+        name="description"
+        content="Learn more about Hannah Kim, a front-end developer with a focus on creating intuitive, user-friendly websites."
+      />
+      <meta
+        property="og:title"
+        content="About | Hannah Kim - Front-End Developer"
+      />
+      <meta
+        property="og:description"
+        content="Learn more about Hannah Kim, a front-end developer with a focus on creating intuitive, user-friendly websites."
+      />
+      <meta
+        property="og:image"
+        content="https://i.postimg.cc/g29CGChX/social-card.png"
+      />
+      <meta property="og:url" content="https://hannahkim.dev/about/" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="About | Hannah Kim - Front-End Developer"
+      />
+      <meta
+        name="twitter:description"
+        content="Learn more about Hannah Kim, a front-end developer with a focus on creating intuitive, user-friendly websites."
+      />
+      <meta
+        name="twitter:image"
+        content="https://i.postimg.cc/g29CGChX/social-card.png"
+      />
+    </Helmet>
     <section className={`mb-sm ${styles.introSection}`}>
       <h1 className={styles.introHeading}>About Hannah Kim</h1>
       <p>

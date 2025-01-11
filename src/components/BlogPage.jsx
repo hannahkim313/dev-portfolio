@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import useFetchAPI from '../hooks/useFetchAPI';
 import formatDate from '../utils/formatDate';
 import styles from '../styles/blog.module.css';
@@ -29,6 +30,41 @@ const BlogPage = () => {
 
   return (
     <>
+      {data && (
+        <Helmet>
+          <title>Blog | Hannah Kim - Front-End Developer</title>
+          <meta
+            name="description"
+            content="Explore articles written by Hannah Kim on web development, current and future projects, and the journey to becoming a developer."
+          />
+          <meta
+            property="og:title"
+            content="Blog | Hannah Kim - Front-End Developer"
+          />
+          <meta
+            property="og:description"
+            content="Explore articles written by Hannah Kim on web development, current and future projects, and the journey to becoming a developer."
+          />
+          <meta
+            property="og:image"
+            content="https://i.postimg.cc/g29CGChX/social-card.png"
+          />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:title"
+            content="Blog | Hannah Kim - Front-End Developer"
+          />
+          <meta
+            name="twitter:description"
+            content="Explore articles written by Hannah Kim on web development, current and future projects, and the journey to becoming a developer."
+          />
+          <meta
+            name="twitter:image"
+            content="https://i.postimg.cc/g29CGChX/social-card.png"
+          />
+        </Helmet>
+      )}
       <section className={`mb-sm ${styles.introSection}`}>
         <h1>Personal Developer Blog</h1>
         <p>

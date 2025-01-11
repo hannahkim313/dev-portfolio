@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import purpleFlowerImgSrc from '../assets/flower-purple.png';
 import redFlowerImgSrc from '../assets/flower-red.png';
 import whiteFlowerImgSrc from '../assets/flower-white.png';
@@ -35,6 +36,39 @@ const HomePage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Home | Hannah Kim - Front-End Developer</title>
+        <meta
+          name="description"
+          content="Welcome to the portfolio of Hannah Kim, a front-end developer passionate about creating beautiful, responsive websites with a focus on user experience."
+        />
+        <meta
+          property="og:title"
+          content="Home | Hannah Kim - Front-End Developer"
+        />
+        <meta
+          property="og:description"
+          content="Welcome to the portfolio of Hannah Kim, a front-end developer passionate about creating beautiful, responsive websites with a focus on user experience."
+        />
+        <meta
+          property="og:image"
+          content="https://i.postimg.cc/g29CGChX/social-card.png"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Home | Hannah Kim - Front-End Developer"
+        />
+        <meta
+          name="twitter:description"
+          content="Welcome to the portfolio of Hannah Kim, a front-end developer passionate about creating beautiful, responsive websites with a focus on user experience."
+        />
+        <meta
+          name="twitter:image"
+          content="https://i.postimg.cc/g29CGChX/social-card.png"
+        />
+      </Helmet>
       <section className={`mb-sm ${styles.authorSection}`}>
         <img
           className={styles.authorImg}
