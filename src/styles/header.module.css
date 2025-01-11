@@ -53,7 +53,7 @@ header {
 .navList {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md);
 }
 
 .underline {
@@ -66,8 +66,13 @@ header {
   background-color: var(--color-neutral);
 }
 
-.ctaCustom {
+.ctaCustomHeader {
   font-size: var(--font-size-smaller);
+}
+
+.ctaCustomSidebar {
+  display: block;
+  text-align: center;
 }
 
 @media (min-width: 768px) {

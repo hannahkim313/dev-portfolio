@@ -27,7 +27,7 @@ const Header = () => {
               Creative Front-End Developer
             </span>
           </h2>
-          <a className={`cta skip ${styles.ctaCustom}`} href="#content">
+          <a className={`cta skip ${styles.ctaCustomHeader}`} href="#content">
             Skip to Main Content
           </a>
         </div>
@@ -97,19 +97,44 @@ const Header = () => {
                   <h3 className="hidden">Main Navigation</h3>
                   <ul className={styles.navList}>
                     <li>
-                      <Link to="/">Home</Link>
+                      <Link
+                        className={`${currentPath === '' ? styles.underline : ''}`}
+                        to="/"
+                      >
+                        Home
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/projects">Projects</Link>
+                      <Link
+                        className={`${currentPath === 'projects' ? styles.underline : ''}`}
+                        to="/projects"
+                      >
+                        Projects
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/about">About</Link>
+                      <Link
+                        className={`${currentPath === 'about' ? styles.underline : ''}`}
+                        to="/about"
+                      >
+                        About
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/blog">Blog</Link>
+                      <Link
+                        className={`${currentPath === 'blog' ? styles.underline : ''}`}
+                        to="/blog"
+                      >
+                        Blog
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/contact">Get In Touch</Link>
+                      <Link
+                        className={`cta ${styles.ctaCustomSidebar}`}
+                        to="/contact"
+                      >
+                        Get In Touch
+                      </Link>
                     </li>
                   </ul>
                 </nav>
