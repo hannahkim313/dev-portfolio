@@ -14,13 +14,8 @@ const ArticlePage = () => {
   const { id } = location.state || {};
 
   const url = `/api/articles/${id}`;
-  const body = {};
 
-  const { data, fetchError } = useFetchAPI(
-    shouldFetch ? url : null,
-    'GET',
-    shouldFetch ? body : null
-  );
+  const { data, fetchError } = useFetchAPI(shouldFetch ? url : null, 'GET');
 
   useEffect(() => {
     if (data) {

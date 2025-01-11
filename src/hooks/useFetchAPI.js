@@ -40,14 +40,14 @@ const useFetchAPI = (url, method = 'GET', body = null, options = {}) => {
       }
     };
 
-    if (url && body) {
+    if (url) {
       fetchData();
     }
 
     return () => {
       controller.abort();
     };
-  }, [url, body]);
+  }, [url]);
 
   return { data, loading, fetchError };
 };

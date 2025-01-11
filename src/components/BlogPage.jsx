@@ -10,13 +10,8 @@ const BlogPage = () => {
   const [shouldFetch, setShouldFetch] = useState(true);
 
   const url = '/api/articles';
-  const body = {};
 
-  const { data, fetchError } = useFetchAPI(
-    shouldFetch ? url : null,
-    'GET',
-    shouldFetch ? body : null
-  );
+  const { data, fetchError } = useFetchAPI(shouldFetch ? url : null, 'GET');
 
   useEffect(() => {
     if (data) {
