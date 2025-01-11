@@ -152,10 +152,10 @@ code {
   padding: var(--spacing-xs);
   background-color: var(--color-background-dark);
   border-radius: var(--border-radius-xs);
+  overflow-wrap: anywhere;
 }
 
 code.codeBlock {
-  display: block;
   padding: 0;
   background: none;
   border-radius: 0;
