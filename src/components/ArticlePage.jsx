@@ -1,6 +1,6 @@
 import DOMPurify from 'dompurify';
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import useFetchAPI from '../hooks/useFetchAPI';
 import formatDate from '../utils/formatDate';
 import styles from '../styles/article-page.module.css';
@@ -11,7 +11,15 @@ const ArticlePage = () => {
   const [shouldFetch, setShouldFetch] = useState(true);
 
   const location = useLocation();
-  const { id } = location.state || {};
+  const id = location.state?.id;
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!id) {
+      navigate('/error');
+    }
+  }, [id, navigate]);
 
   const url = `${import.meta.env.VITE_API_URL}/api/articles/${id}`;
 
