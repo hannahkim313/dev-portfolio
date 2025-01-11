@@ -3,7 +3,7 @@ import styles from '../styles/project-card.module.css';
 
 const ProjectCard = ({ data }) => (
   <article className={styles.projectCard}>
-    <Link to={data.projectLink} data={data}>
+    <Link to={data.projectLink}>
       <div className={styles.projectThumbnailContainer}>
         <img
           className={styles.projectThumbnail}
