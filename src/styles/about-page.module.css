@@ -9,6 +9,19 @@
   text-align: center;
 }
 
+.introContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.authorImg {
+  width: 50%;
+  height: auto;
+  border-radius: var(--border-radius-xs);
+  align-self: center;
+}
+
 .introDetails {
   display: flex;
   flex-direction: column;
@@ -26,6 +39,16 @@
 
 .ctaSecondarySmaller {
   font-size: var(--font-size-smaller);
+}
+
+@media (min-width: 768px) {
+  .introContentContainer {
+    flex-direction: row;
+  }
+
+  .authorImg {
+    max-width: 150px;
+  }
 }
 
 @media (min-width: 1024px) {

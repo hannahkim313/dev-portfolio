@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import authorImgSrc from '../assets/portrait-transparent.png';
+import authorImgSrc from '../assets/portrait.jpeg';
 import githubImgSrc from '../assets/github.svg';
 import mailImgSrc from '../assets/mail.png';
 import linkedInImgSrc from '../assets/linkedIn.png';
@@ -11,7 +11,7 @@ const Footer = () => (
       <img
         className={styles.authorImg}
         src={authorImgSrc}
-        alt="Digital illustration of Hannah Kim"
+        alt="Photo of Hannah Kim"
       />
       <p className={styles.authorInfo}>
         <span>Hannah Kim</span>

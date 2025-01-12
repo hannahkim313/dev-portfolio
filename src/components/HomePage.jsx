@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async';
 import purpleFlowerImgSrc from '../assets/flower-purple.png';
 import redFlowerImgSrc from '../assets/flower-red.png';
 import whiteFlowerImgSrc from '../assets/flower-white.png';
-import authorImgSrc from '../assets/portrait-transparent.png';
 import projects from '../data/projectsData';
 import ProjectCard from './ProjectCard';
 import styles from '../styles/home-page.module.css';
@@ -70,11 +69,6 @@ const HomePage = () => {
         />
       </Helmet>
       <section className={`mb-sm ${styles.authorSection}`}>
-        <img
-          className={styles.authorImg}
-          src={authorImgSrc}
-          alt="Digital illustration of Hannah Kim"
-        />
         <div className={styles.authorDetails}>
           <h1 className={styles.authorTitle}>Hi, I'm Hannah</h1>
           <p className={styles.authorSummary}>

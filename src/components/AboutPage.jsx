@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import authorImgSrc from '../assets/portrait.jpeg';
 import styles from '../styles/about-page.module.css';
 
 const AboutPage = () => (
@@ -40,12 +41,19 @@ const AboutPage = () => (
     </Helmet>
     <section className={`mb-sm ${styles.introSection}`}>
       <h1 className={styles.introHeading}>About Hannah Kim</h1>
-      <p>
-        I'm a self-taught software engineer with a background in illustration.
-        Motivated by my passion for enhancing user experience through accessible
-        and innovative design, I am excited to create web applications that
-        combine aesthetics with practicality.
-      </p>
+      <div className={styles.introContentContainer}>
+        <img
+          className={styles.authorImg}
+          src={authorImgSrc}
+          alt="Photo of Hannah Kim"
+        />
+        <p>
+          I'm a self-taught software engineer with a background in illustration.
+          Motivated by my passion for enhancing user experience through
+          accessible and innovative design, I am excited to create web
+          applications that combine aesthetics with practicality.
+        </p>
+      </div>
     </section>
     <section className={`textContainer-lg ${styles.skillsSection}`}>
       <h2 className="mb-xs">Skills and Technologies</h2>

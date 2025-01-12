@@ -21,8 +21,10 @@ footer p {
 
 .authorImg {
   width: calc(var(--font-size-base) * 5);
-  background-color: var(--color-background);
   border-radius: var(--border-radius-xs);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 25%;
 }
 
 .authorInfo {
