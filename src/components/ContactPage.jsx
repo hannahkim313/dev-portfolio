@@ -45,7 +45,7 @@ const ContactPage = () => (
       </p>
     </section>
     <div className={`contentEnd ${styles.ctaContainer}`}>
-      <a className="cta" href="mailto:devhkim.contact@gmail.com">
+      <a className="cta" href="mailto:hello@hannahkim.dev">
         Email Me
       </a>
       <ul className={styles.contactLinks}>

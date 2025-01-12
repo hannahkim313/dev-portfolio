@@ -148,10 +148,7 @@ const Header = () => {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="mailto:devhkim.contact@gmail.com"
-                        target="_blank"
-                      >
+                      <a href="mailto:hello@hannahkim.dev" target="_blank">
                         Email
                       </a>
                     </li>

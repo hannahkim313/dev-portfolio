@@ -44,7 +44,7 @@ const Footer = () => (
         <ul className={`${styles.navList} ${styles.socials}`}>
           <li>
             <a
-              href="mailto:devhkim.contact@gmail.com"
+              href="mailto:hello@hannahkim.dev"
               aria-label="Send an email to Hannah Kim"
             >
               <img src={mailImgSrc} alt="Mail icon" />
