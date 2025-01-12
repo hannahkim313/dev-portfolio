@@ -54,6 +54,7 @@ const Footer = () => (
             <a
               href="https://github.com/hannahkim313"
               aria-label="Github profile"
+              target="_blank"
             >
               <img src={githubImgSrc} alt="Github icon" />
             </a>
@@ -62,6 +63,7 @@ const Footer = () => (
             <a
               href="https://www.linkedin.com/in/hannah-n-kim"
               aria-label="LinkedIn profile"
+              target="_blank"
             >
               <img src={linkedInImgSrc} alt="LinkedIn icon" />
             </a>

@@ -143,13 +143,23 @@ const Header = () => {
                   <h3 className="hidden">Get In Touch</h3>
                   <ul className={styles.navList}>
                     <li>
-                      <a href="https://github.com/hannahkim313">GitHub</a>
+                      <a href="https://github.com/hannahkim313" target="_blank">
+                        GitHub
+                      </a>
                     </li>
                     <li>
-                      <a href="mailto:devhkim.contact@gmail.com">Email</a>
+                      <a
+                        href="mailto:devhkim.contact@gmail.com"
+                        target="_blank"
+                      >
+                        Email
+                      </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/in/hannah-n-kim">
+                      <a
+                        href="https://www.linkedin.com/in/hannah-n-kim"
+                        target="_blank"
+                      >
                         LinkedIn
                       </a>
                     </li>

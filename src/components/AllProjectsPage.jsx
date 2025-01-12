@@ -55,7 +55,11 @@ const AllProjectsPage = () => (
     </div>
     <p className={styles.githubCta}>
       Check out all my projects on{' '}
-      <a className="ctaSecondary" href="https://github.com/hannahkim313">
+      <a
+        className="ctaSecondary"
+        href="https://github.com/hannahkim313"
+        target="_blank"
+      >
         GitHub
       </a>
       .
