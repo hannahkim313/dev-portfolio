@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /api/
+Disallow: /src/
+
+Allow: /public/
+Allow: /dist/
+
+Sitemap: https://hannahkim.dev/sitemap.xml
