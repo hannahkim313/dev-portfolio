@@ -272,11 +272,13 @@ code.codeBlock {
   }
 }
 
-@media (min-width: 768px) {
-  :root {
-    --font-size-base: 1.125rem;
+@media (max-width: 768px) and (orientation: landscape) {
+  main > * {
+    max-width: 75%;
   }
+}
 
+@media (min-width: 768px) {
   pre {
     padding: var(--spacing-xl);
   }
@@ -286,7 +288,7 @@ code.codeBlock {
   }
 
   main > * {
-    max-width: 85%;
+    max-width: 75%;
   }
 }
 
