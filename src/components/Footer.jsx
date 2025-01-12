@@ -20,7 +20,7 @@ const Footer = () => (
     </div>
     <div className={styles.navListsContainer}>
       <nav>
-        <h3 className="hidden">Main Navigation</h3>
+        <p className="hidden">Main Navigation</p>
         <ul className={styles.navList}>
           <li>
             <Link to="/">Home</Link>
@@ -40,7 +40,7 @@ const Footer = () => (
         </ul>
       </nav>
       <div>
-        <h3 className="hidden">Get In Touch</h3>
+        <p className="hidden">Get In Touch</p>
         <ul className={`${styles.navList} ${styles.socials}`}>
           <li>
             <a
