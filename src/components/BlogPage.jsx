@@ -70,7 +70,7 @@ const BlogPage = () => {
           journey as a developer.
         </p>
       </section>
-      <section className={styles.articlesSection}>
+      <section className={`contentEnd ${styles.articlesSection}`}>
         <h2 className={`mb-xs ${styles.articlesHeading}`}>Articles</h2>
         {loading && <p>Loading articles...</p>}
         {error && <p>{error}</p>}
