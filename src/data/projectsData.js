@@ -163,7 +163,7 @@ const projects = [
       fundamentals without frameworks, focusing on core logic and
       DOM manipulation.`,
       `Modular design to separate app logic from DOM manipulation and uses
-      factory functions for Ship, Gameboard, and Ship objects to maintain
+      factory functions for Ship, Gameboard, and Player objects to maintain
       clean and organized code.`,
       `Interactive gameplay driven by event listeners that allow players to
       place ships, adjust positions, and attack the opponent's board, with
